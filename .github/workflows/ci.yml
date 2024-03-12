@@ -18,11 +18,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: tercen/actions/workflow-CI@main
+      - uses: tercen/actions/start-tercen@main
+      - name: docker login
+        run: |
+          docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_PASSWORD }}
+      - name: Install Template Runner
+        run: docker pull tercen/workflow_runner:latest
+      - name: Test template 
+        id: run_test
+        run: |
+          docker run -t --net=host tercen/workflow_runner:latest \
+            --templateRepo=${GITHUB_REPOSITORY} \
+            --templateFolder=workflow_tests \
+            --user=test \
+            --passw=test \
+            --opMem="500000000" \
+            --serviceUri=http://127.0.0.1:5400 \
+            --gitToken=${{ github.token }} 
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
         with:
-          git-repository: ${GITHUB_REPOSITORY}
-          # branch: main
-          # tag: ''
-          git-token: ${{ github.token }}
-          docker-username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          docker-password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+          name: TestResults
+          path: test_results.json
+          retention-days: 1
+      - name: 'Create Tercen Logs'
+        if: always()  
+        run: docker logs start-tercen_tercen_1 
+        working-directory: ${{ github.action_path }}
+      - name: 'Upload Tercen Logs'
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: TercenLogs
+          path: ${{ github.action_path }}/tercen_logs.log
+          retention-days: 2
