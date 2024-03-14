@@ -276,7 +276,7 @@
     "kind": "OperatorRef",
     "name": "PhenoGraph",
     "version": "2.0.2",
-    "operatorId": "3",
+    "operatorId": "2",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

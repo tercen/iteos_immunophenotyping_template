@@ -426,7 +426,7 @@
     "kind": "OperatorRef",
     "name": "Mean",
     "version": "1.3.2",
-    "operatorId": "4",
+    "operatorId": "3",
     "operatorKind": "ROperator",
     "propertyValues": [],
     "url": {

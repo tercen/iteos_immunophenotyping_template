@@ -343,7 +343,7 @@
     "kind": "OperatorRef",
     "name": "Marker Enrichment Score",
     "version": "0.1.3",
-    "operatorId": "8",
+    "operatorId": "7",
     "operatorKind": "ROperator",
     "propertyValues": [],
     "url": {

@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "24",
+ "id": "23",
  "isDeleted": false,
  "rev": "",
  "description": "Gold standard",
@@ -38,7 +38,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "21",
+ "folderId": "20",
  "links": [
   {
    "kind": "Link",
@@ -282,7 +282,7 @@
      "id": "rename_c181d88fc22665c2d02829f340cec5d2",
      "relation": {
       "kind": "ReferenceRelation",
-      "id": "23",
+      "id": "22",
       "relation": {
        "kind": "CompositeRelation",
        "id": "76529413-5642-4b25-ad82-21498d4ec72a",
@@ -1128,7 +1128,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "6",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -2078,7 +2078,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "3",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2516,7 +2516,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "7",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -3378,7 +3378,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "4",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -4030,7 +4030,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -4286,7 +4286,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "8",
+      "operatorId": "7",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -4716,7 +4716,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "2",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5000,7 +5000,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "c181d88fc22665c2d02829f340de7c6c",
+    "taskId": "c181d88fc22665c2d02829f340e36600",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5323,7 +5323,7 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Plot",
-      "version": "0.1.1",
+      "version": "0.1.6",
       "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
@@ -5515,7 +5515,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "7ff40c27-5165-4d2b-b34c-b6f678446797",
+    "id": "b4cc39ec-8930-4378-a6b7-da68f5a836bc",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -5527,14 +5527,14 @@
       },
       "rightRelation": {
        "kind": "SimpleRelation",
-       "id": "bd222689f53e1307567fbd1e535642716398eb843687226856578621edcc2616",
+       "id": "c374ba3042ae91ccfbee544dd67a135c6c8c51a2d0294186f0566f7b118812d2",
        "index": 0
       }
      }
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "54b807c1-13cc-47c0-a91d-d1a75fa60f4c"
+     "id": "3b29ced3-a98c-4592-a440-77dfc76c1f8b"
     }
    },
    "parentDataStepId": ""
@@ -5766,7 +5766,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.1.6",
-      "operatorId": "1",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -6237,7 +6237,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.1.6",
-      "operatorId": "1",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -6471,7 +6471,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -6747,7 +6747,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "5",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -6977,7 +6977,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -7198,7 +7198,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.1.6",
-      "operatorId": "1",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -7480,7 +7480,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": ""
@@ -7516,7 +7516,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": ""
