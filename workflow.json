@@ -4233,8 +4233,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Plot",
-      "version": "0.1.1",
-      "operatorId": "0",
+      "version": "0.1.6",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
