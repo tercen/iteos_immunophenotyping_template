@@ -23,8 +23,8 @@
  "meta": [],
  "url": {
   "kind": "Url",
-  "uri": "https://github.com/tercen/flow_basic_template"
+  "uri": "https://github.com/tercen/flow_core_immunophenotyping_template"
  },
- "version": "0.0.8",
+ "version": "37a9d747ed840c724298ccc7c363d7ce9ca6bc60",
  "isPublic": false
 }

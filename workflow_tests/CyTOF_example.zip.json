@@ -1,6 +1,6 @@
 {
  "kind": "TableSchema",
- "id": "22",
+ "id": "23",
  "isDeleted": false,
  "rev": "",
  "description": "",
@@ -28,13 +28,13 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "20",
+ "folderId": "19",
  "nRows": 0,
  "columns": [],
  "dataDirectory": "",
  "relation": {
   "kind": "CompositeRelation",
-  "id": "76529413-5642-4b25-ad82-21498d4ec72a",
+  "id": "6e4e8068-800f-4a80-9472-6d82990d56ce",
   "joinOperators": [
    {
     "kind": "JoinOperator",
@@ -50,14 +50,14 @@
     },
     "rightRelation": {
      "kind": "SimpleRelation",
-     "id": "9164869c905eab0484aba9dd3014e78ba96f226bd8cf49c702816e0f3cb6efab",
+     "id": "3f414d0503d460119112c8502210e66c48135b6010a635adb28f1b8e20218753",
      "index": 0
     }
    }
   ],
   "mainRelation": {
    "kind": "SimpleRelation",
-   "id": "2c4bb999823fbd916c0f9e19c6280f727343ccbba9e5c4fbb2bfa5bc3f0bda49",
+   "id": "00ee604b59f812b19f384bf9ca4d2de0811b6a9b153818343577d88efab0a1ee",
    "index": 0
   }
  }
