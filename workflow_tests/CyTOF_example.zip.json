@@ -1,0 +1,64 @@
+{
+ "kind": "TableSchema",
+ "id": "23",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "CyTOF_example.zip",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "21",
+ "nRows": 0,
+ "columns": [],
+ "dataDirectory": "",
+ "relation": {
+  "kind": "CompositeRelation",
+  "id": "76529413-5642-4b25-ad82-21498d4ec72a",
+  "joinOperators": [
+   {
+    "kind": "JoinOperator",
+    "joinType": "leftOuter",
+    "leftPair": {
+     "kind": "ColumnPair",
+     "lColumns": [
+      "event_id"
+     ],
+     "rColumns": [
+      "event_id"
+     ]
+    },
+    "rightRelation": {
+     "kind": "SimpleRelation",
+     "id": "9164869c905eab0484aba9dd3014e78ba96f226bd8cf49c702816e0f3cb6efab",
+     "index": 0
+    }
+   }
+  ],
+  "mainRelation": {
+   "kind": "SimpleRelation",
+   "id": "2c4bb999823fbd916c0f9e19c6280f727343ccbba9e5c4fbb2bfa5bc3f0bda49",
+   "index": 0
+  }
+ }
+}
