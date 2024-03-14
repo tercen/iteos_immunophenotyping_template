@@ -4,7 +4,7 @@
  "isDeleted": false,
  "rev": "",
  "description": "A template to perform clustering (Phenograph) and dimension reduction (UMAP) on flow cytometry data.",
- "name": "workflow.json",
+ "name": "workflow",
  "acl": {
   "kind": "Acl",
   "owner": "",
