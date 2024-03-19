@@ -30,10 +30,10 @@ jobs:
           docker run -t --net=host tercen/workflow_runner:latest \
             --templateRepo=${GITHUB_REPOSITORY} \
             --templateFolder=workflow_tests \
-            --user=test \
-            --passw=test \
+            --user=${{ secrets.TERCEN_TEST_OPERATOR_USERNAME }} \
+            --passw=${{ secrets.TERCEN_TEST_OPERATOR_PASSWORD }} \
             --opMem="500000000" \
-            --serviceUri=http://127.0.0.1:5400 \
+            --serviceUri=${{ secrets.TERCEN_TEST_OPERATOR_URI }} \
             --gitToken=${{ github.token }} 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
