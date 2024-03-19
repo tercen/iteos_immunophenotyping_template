@@ -34,7 +34,8 @@ jobs:
             --passw=${{ secrets.TERCEN_TEST_OPERATOR_PASSWORD }} \
             --opMem="500000000" \
             --serviceUri=${{ secrets.TERCEN_TEST_OPERATOR_URI }} \
-            --gitToken=${{ github.token }} 
+            --gitToken=${{ github.token }}  \
+            --report
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
         with:
