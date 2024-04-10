@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "22",
+ "id": "23",
  "isDeleted": false,
  "rev": "",
  "description": "Gold standard",
@@ -24,13 +24,7 @@
   "clustering",
   "immunophenotyping"
  ],
- "meta": [
-  {
-   "kind": "Pair",
-   "key": "PUBLISHED",
-   "value": "true"
-  }
- ],
+ "meta": [],
  "url": {
   "kind": "Url",
   "uri": ""
@@ -38,7 +32,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "19",
+ "folderId": "17",
  "links": [
   {
    "kind": "Link",
@@ -616,7 +610,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "1",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1394,7 +1388,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 5000
+     "nRows": 1
     },
     "filters": {
      "kind": "Filters",
@@ -1458,7 +1452,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "4",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1469,7 +1463,7 @@
        {
         "kind": "PropertyValue",
         "name": "seed",
-        "value": "-1"
+        "value": "42"
        },
        {
         "kind": "PropertyValue",
@@ -1569,7 +1563,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 67
+     "nRows": 1
     },
     "taskId": ""
    },
@@ -1824,7 +1818,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "6",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1865,7 +1859,7 @@
        {
         "kind": "PropertyValue",
         "name": "seed",
-        "value": "-1"
+        "value": "42"
        }
       ],
       "url": {
@@ -2612,7 +2606,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "3",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3446,7 +3440,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "2",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3764,7 +3758,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "0",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5597,7 +5591,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "5",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {

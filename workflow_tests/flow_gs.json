@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "21",
+ "id": "22",
  "isDeleted": false,
  "rev": "",
  "description": "Gold standard",
@@ -24,13 +24,7 @@
   "clustering",
   "immunophenotyping"
  ],
- "meta": [
-  {
-   "kind": "Pair",
-   "key": "PUBLISHED",
-   "value": "true"
-  }
- ],
+ "meta": [],
  "url": {
   "kind": "Url",
   "uri": ""
@@ -38,7 +32,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "19",
+ "folderId": "17",
  "links": [
   {
    "kind": "Link",
@@ -282,7 +276,7 @@
      "id": "rename_1a50452c6b53f0ad249e344f61ebb5e1",
      "relation": {
       "kind": "ReferenceRelation",
-      "id": "23",
+      "id": "20",
       "relation": {
        "kind": "CompositeRelation",
        "id": "eac487f5-8a64-4c4e-adee-da8d09e7f147",
@@ -969,7 +963,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ebc8d9",
+    "taskId": "e3fcb9e9cce5bf8280a0a625883ff8a7",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1128,7 +1122,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "1",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1377,7 +1371,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ec04fd",
+    "taskId": "e3fcb9e9cce5bf8280a0a6258840068c",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1869,7 +1863,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ec0b4d",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884b056f",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2078,7 +2072,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "4",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2089,7 +2083,7 @@
        {
         "kind": "PropertyValue",
         "name": "seed",
-        "value": "-1"
+        "value": "42"
        },
        {
         "kind": "PropertyValue",
@@ -2195,7 +2189,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "07795174-8b6b-475d-9a85-3a4037216f03",
+    "id": "1b26d71d-c8a1-4557-81be-457fd39d7b36",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -2211,10 +2205,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "21d1152b-c091-4a79-8c84-94c2fdf0c327",
+       "id": "6338acb2-e740-46bc-a86b-78a9ebffbb12",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "88b1a57b-db59-4324-9829-94a1e8ee035f",
+        "id": "f11fac4a-0cd7-45e9-83c8-3650673c442c",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -2225,40 +2219,40 @@
             ".ci"
            ],
            "rColumns": [
-            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids"
+            "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a",
+           "id": "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e",
            "index": 0
           }
          }
         ],
         "mainRelation": {
          "kind": "SimpleRelation",
-         "id": "55568a06e1ea7e25d6bff48e219b1ba3f6e25124e2c40b7e51328acd894ea196",
+         "id": "3e5f85c5c53afdddfb75c7a799f5578278a819cd60da9121e04134943fd7ed8c",
          "index": 0
         }
        },
        "inNames": [
         ".ci",
         "clust.cluster_id",
-        "55568a06e1ea7e25d6bff48e219b1ba3f6e25124e2c40b7e51328acd894ea196._rids",
-        "55568a06e1ea7e25d6bff48e219b1ba3f6e25124e2c40b7e51328acd894ea196.tlbId",
+        "3e5f85c5c53afdddfb75c7a799f5578278a819cd60da9121e04134943fd7ed8c._rids",
+        "3e5f85c5c53afdddfb75c7a799f5578278a819cd60da9121e04134943fd7ed8c.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e._rids",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e.tlbId",
         "logicle..event_id"
        ],
        "outNames": [
         ".ci",
         "clust.cluster_id",
-        "55568a06e1ea7e25d6bff48e219b1ba3f6e25124e2c40b7e51328acd894ea196._rids",
-        "55568a06e1ea7e25d6bff48e219b1ba3f6e25124e2c40b7e51328acd894ea196.tlbId",
+        "3e5f85c5c53afdddfb75c7a799f5578278a819cd60da9121e04134943fd7ed8c._rids",
+        "3e5f85c5c53afdddfb75c7a799f5578278a819cd60da9121e04134943fd7ed8c.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e._rids",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e.tlbId",
         "clust..event_id"
        ]
       }
@@ -2266,7 +2260,7 @@
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "44b0f10a-8838-4c2e-b1ea-3e5352a82f62"
+     "id": "69797396-184b-460f-a547-50d5105878f8"
     }
    },
    "parentDataStepId": ""
@@ -2307,7 +2301,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ec868b",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884b89c6",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2516,7 +2510,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "6",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2557,7 +2551,7 @@
        {
         "kind": "PropertyValue",
         "name": "seed",
-        "value": "-1"
+        "value": "42"
        }
       ],
       "url": {
@@ -2672,7 +2666,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "200b9c2c-099d-432b-bb2e-9baaae21c7c7",
+    "id": "ed56f553-45d7-4c04-bc9d-3ed9dab2bc09",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -2688,10 +2682,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "ea1a5288-7973-4c4b-bbd1-b58d2e1e9f00",
+       "id": "e19b0930-3914-4426-abc8-24d3181dc4b1",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "fe39d327-096d-4dc4-8c2e-4a49302bd086",
+        "id": "a6a9b6bb-7da8-46a3-add7-e9a6bb02572c",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -2702,19 +2696,19 @@
             ".ci"
            ],
            "rColumns": [
-            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids"
+            "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e-1._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1",
+           "id": "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e-1",
            "index": 0
           }
          }
         ],
         "mainRelation": {
          "kind": "SimpleRelation",
-         "id": "ba968cc405752fc98ff275316894204268a015f1f85ceb521c4fe9733663e8db",
+         "id": "10eaf1116350519a2261c0ad16b589f9a90fd72aff150ad64330ffb8fa133407",
          "index": 0
         }
        },
@@ -2722,22 +2716,22 @@
         "umap.umap.1",
         "umap.umap.2",
         ".ci",
-        "ba968cc405752fc98ff275316894204268a015f1f85ceb521c4fe9733663e8db._rids",
-        "ba968cc405752fc98ff275316894204268a015f1f85ceb521c4fe9733663e8db.tlbId",
+        "10eaf1116350519a2261c0ad16b589f9a90fd72aff150ad64330ffb8fa133407._rids",
+        "10eaf1116350519a2261c0ad16b589f9a90fd72aff150ad64330ffb8fa133407.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e-1._rids",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e-1.tlbId",
         "logicle..event_id"
        ],
        "outNames": [
         "umap.umap.1",
         "umap.umap.2",
         ".ci",
-        "ba968cc405752fc98ff275316894204268a015f1f85ceb521c4fe9733663e8db._rids",
-        "ba968cc405752fc98ff275316894204268a015f1f85ceb521c4fe9733663e8db.tlbId",
+        "10eaf1116350519a2261c0ad16b589f9a90fd72aff150ad64330ffb8fa133407._rids",
+        "10eaf1116350519a2261c0ad16b589f9a90fd72aff150ad64330ffb8fa133407.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e-1._rids",
+        "1bffb2868c62f60aa4726d141d7fd146b3ada2c9edd4119ac1d09cb22bb8b84e-1.tlbId",
         "umap..event_id"
        ]
       }
@@ -2745,7 +2739,7 @@
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "850a4f1c-d88e-4646-b416-577425367a6e"
+     "id": "19cc33d3-e7cf-4adf-9629-f0ebe32c5e9f"
     }
    },
    "parentDataStepId": ""
@@ -2834,7 +2828,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61eccea7",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884be29c",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3129,7 +3123,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "087216e7-347f-4abf-b304-4a210be6709b"
+    "id": "9d82eb27-59fb-4415-b37a-006bd9d2b412"
    },
    "parentDataStepId": ""
   },
@@ -3169,7 +3163,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ecdd24",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884bec93",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3378,7 +3372,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "3",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3458,7 +3452,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "efef2663-b6ff-4ef7-92c1-c0da58ef453e",
+    "id": "89d99b18-517c-4a84-9cea-e05ae9253091",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -3474,10 +3468,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "182cca4e-3ea3-433d-82c7-8f5ff1b5931b",
+       "id": "1462d69b-2249-4635-90f5-1c8d4bbc5e61",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "8a605244-fba3-4108-9b36-6a7d6a51f5c9",
+        "id": "3dd932a5-e9bc-45c5-bfbf-8464cdbc1e27",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -3488,19 +3482,19 @@
             ".ri"
            ],
            "rColumns": [
-            "a34710f4616a9bb0c68e210f526ce19c98b3741985da600aa0f729913540d719._rids"
+            "6d0a02adb44326d030b8c83fe8ffef6ff4d367d8a302e799c6208fe7b6dbac59._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "a34710f4616a9bb0c68e210f526ce19c98b3741985da600aa0f729913540d719",
+           "id": "6d0a02adb44326d030b8c83fe8ffef6ff4d367d8a302e799c6208fe7b6dbac59",
            "index": 0
           }
          }
         ],
         "mainRelation": {
          "kind": "SimpleRelation",
-         "id": "c8c093f855d1be18b0f2f1728edb0ba2cc2e7ab842466f3074e20cda5ed2d8f4",
+         "id": "16ef1f1f191525bc7c0e61e48334dcb37b31b5bee807007e601aef36bbb13d17",
          "index": 0
         }
        },
@@ -3508,22 +3502,22 @@
         ".ri",
         "centroid.mean_y",
         "centroid.mean_x",
-        "c8c093f855d1be18b0f2f1728edb0ba2cc2e7ab842466f3074e20cda5ed2d8f4._rids",
-        "c8c093f855d1be18b0f2f1728edb0ba2cc2e7ab842466f3074e20cda5ed2d8f4.tlbId",
+        "16ef1f1f191525bc7c0e61e48334dcb37b31b5bee807007e601aef36bbb13d17._rids",
+        "16ef1f1f191525bc7c0e61e48334dcb37b31b5bee807007e601aef36bbb13d17.tlbId",
         "clust.cluster_id",
-        "a34710f4616a9bb0c68e210f526ce19c98b3741985da600aa0f729913540d719._rids",
-        "a34710f4616a9bb0c68e210f526ce19c98b3741985da600aa0f729913540d719.tlbId",
+        "6d0a02adb44326d030b8c83fe8ffef6ff4d367d8a302e799c6208fe7b6dbac59._rids",
+        "6d0a02adb44326d030b8c83fe8ffef6ff4d367d8a302e799c6208fe7b6dbac59.tlbId",
         "clust.cluster_id"
        ],
        "outNames": [
         ".ri",
         "centroid.mean_y",
         "centroid.mean_x",
-        "c8c093f855d1be18b0f2f1728edb0ba2cc2e7ab842466f3074e20cda5ed2d8f4._rids",
-        "c8c093f855d1be18b0f2f1728edb0ba2cc2e7ab842466f3074e20cda5ed2d8f4.tlbId",
+        "16ef1f1f191525bc7c0e61e48334dcb37b31b5bee807007e601aef36bbb13d17._rids",
+        "16ef1f1f191525bc7c0e61e48334dcb37b31b5bee807007e601aef36bbb13d17.tlbId",
         "clust.cluster_id",
-        "a34710f4616a9bb0c68e210f526ce19c98b3741985da600aa0f729913540d719._rids",
-        "a34710f4616a9bb0c68e210f526ce19c98b3741985da600aa0f729913540d719.tlbId",
+        "6d0a02adb44326d030b8c83fe8ffef6ff4d367d8a302e799c6208fe7b6dbac59._rids",
+        "6d0a02adb44326d030b8c83fe8ffef6ff4d367d8a302e799c6208fe7b6dbac59.tlbId",
         "centroid..cluster_id"
        ]
       }
@@ -3531,7 +3525,7 @@
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "a475014a-e63c-4ae2-a959-6841e296cb2d"
+     "id": "307af090-03df-42cf-8673-ac5cc1710754"
     }
    },
    "parentDataStepId": ""
@@ -3572,7 +3566,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ecdb8d",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884be69d",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3894,7 +3888,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "ed1f5b3c-a848-4121-9f2b-9ef21919645f"
+    "id": "649d73a8-c3db-4910-befd-52474ab933f2"
    },
    "parentDataStepId": ""
   },
@@ -4127,7 +4121,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61eceb47",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884bfbbc",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4286,7 +4280,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "2",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -4387,7 +4381,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "2779d145-5c0a-4d44-81b3-98036f769af6",
+    "id": "471e43c8-d829-4d28-b1cb-b923ed0be71d",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -4407,10 +4401,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "948da809-c2c7-4aa0-ab70-d7dcebfeb253",
+       "id": "8a8b579c-ed63-459d-9d23-cde60de5bf9d",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "0cdf0fa6-261f-4124-8bf0-ecc5046c36f7",
+        "id": "7a30ae5a-b707-4893-bde5-d3776f588186",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -4421,12 +4415,12 @@
             ".ci"
            ],
            "rColumns": [
-            "c9e200de7e3f073bd328b198ee28b4cdee7230ad4dee37353cd06fd395acf832._rids"
+            "dda2cbcef4a6241867efe78e7bbddb9b9f0eff27b2ea44a8df92f25675214e37._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "c9e200de7e3f073bd328b198ee28b4cdee7230ad4dee37353cd06fd395acf832",
+           "id": "dda2cbcef4a6241867efe78e7bbddb9b9f0eff27b2ea44a8df92f25675214e37",
            "index": 0
           }
          },
@@ -4439,19 +4433,19 @@
             ".ri"
            ],
            "rColumns": [
-            "453d65164cea829d59a32bf8c8d81bf9ca9e8fd3942ac77ae8e3ca4afd781613._rids"
+            "7dfa53d1652ddca3d58aa43c8d4b450dbd12bd1c4ecdeddf2759660eea7d0e44._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "453d65164cea829d59a32bf8c8d81bf9ca9e8fd3942ac77ae8e3ca4afd781613",
+           "id": "7dfa53d1652ddca3d58aa43c8d4b450dbd12bd1c4ecdeddf2759660eea7d0e44",
            "index": 0
           }
          }
         ],
         "mainRelation": {
          "kind": "SimpleRelation",
-         "id": "0f67da4fc60a4cf44b7fdbab3a08fde0c3a6121583276c9dd654caa546810c27",
+         "id": "936b27a28d012413190708b70f102b79cc0e4a9eadc88bf89bc109600a52e450",
          "index": 0
         }
        },
@@ -4461,15 +4455,15 @@
         "enrich.score",
         "enrich.p_value",
         "enrich.neglog_p_value",
-        "0f67da4fc60a4cf44b7fdbab3a08fde0c3a6121583276c9dd654caa546810c27._rids",
-        "0f67da4fc60a4cf44b7fdbab3a08fde0c3a6121583276c9dd654caa546810c27.tlbId",
+        "936b27a28d012413190708b70f102b79cc0e4a9eadc88bf89bc109600a52e450._rids",
+        "936b27a28d012413190708b70f102b79cc0e4a9eadc88bf89bc109600a52e450.tlbId",
         "clust.cluster_id",
-        "c9e200de7e3f073bd328b198ee28b4cdee7230ad4dee37353cd06fd395acf832._rids",
-        "c9e200de7e3f073bd328b198ee28b4cdee7230ad4dee37353cd06fd395acf832.tlbId",
+        "dda2cbcef4a6241867efe78e7bbddb9b9f0eff27b2ea44a8df92f25675214e37._rids",
+        "dda2cbcef4a6241867efe78e7bbddb9b9f0eff27b2ea44a8df92f25675214e37.tlbId",
         "logicle..variable",
         "logicle..channel_description",
-        "453d65164cea829d59a32bf8c8d81bf9ca9e8fd3942ac77ae8e3ca4afd781613._rids",
-        "453d65164cea829d59a32bf8c8d81bf9ca9e8fd3942ac77ae8e3ca4afd781613.tlbId",
+        "7dfa53d1652ddca3d58aa43c8d4b450dbd12bd1c4ecdeddf2759660eea7d0e44._rids",
+        "7dfa53d1652ddca3d58aa43c8d4b450dbd12bd1c4ecdeddf2759660eea7d0e44.tlbId",
         "clust.cluster_id",
         "logicle..variable",
         "logicle..channel_description"
@@ -4480,15 +4474,15 @@
         "enrich.score",
         "enrich.p_value",
         "enrich.neglog_p_value",
-        "0f67da4fc60a4cf44b7fdbab3a08fde0c3a6121583276c9dd654caa546810c27._rids",
-        "0f67da4fc60a4cf44b7fdbab3a08fde0c3a6121583276c9dd654caa546810c27.tlbId",
+        "936b27a28d012413190708b70f102b79cc0e4a9eadc88bf89bc109600a52e450._rids",
+        "936b27a28d012413190708b70f102b79cc0e4a9eadc88bf89bc109600a52e450.tlbId",
         "clust.cluster_id",
-        "c9e200de7e3f073bd328b198ee28b4cdee7230ad4dee37353cd06fd395acf832._rids",
-        "c9e200de7e3f073bd328b198ee28b4cdee7230ad4dee37353cd06fd395acf832.tlbId",
+        "dda2cbcef4a6241867efe78e7bbddb9b9f0eff27b2ea44a8df92f25675214e37._rids",
+        "dda2cbcef4a6241867efe78e7bbddb9b9f0eff27b2ea44a8df92f25675214e37.tlbId",
         "logicle..variable",
         "logicle..channel_description",
-        "453d65164cea829d59a32bf8c8d81bf9ca9e8fd3942ac77ae8e3ca4afd781613._rids",
-        "453d65164cea829d59a32bf8c8d81bf9ca9e8fd3942ac77ae8e3ca4afd781613.tlbId",
+        "7dfa53d1652ddca3d58aa43c8d4b450dbd12bd1c4ecdeddf2759660eea7d0e44._rids",
+        "7dfa53d1652ddca3d58aa43c8d4b450dbd12bd1c4ecdeddf2759660eea7d0e44.tlbId",
         "enrich..cluster_id",
         "enrich..variable",
         "enrich..channel_description"
@@ -4498,7 +4492,7 @@
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "201f9d60-b12f-4518-bfdc-2fd8ae0e0ae8"
+     "id": "46305468-538d-467b-a45b-95d50644cd3d"
     }
    },
    "parentDataStepId": ""
@@ -4539,7 +4533,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61eddc0b",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884d1297",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4716,7 +4710,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "0",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -4822,7 +4816,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "291560a9-a245-45c7-a752-2996a5af888a",
+    "id": "e1808c5c-9865-4fbb-9f61-5d9a9745fa5b",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -4838,10 +4832,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "2eb8727e-2297-4c92-bbdd-68732f2b88bc",
+       "id": "bf52d0a5-1102-43a3-927c-f535a309d0a4",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "6fdc095c-2cc0-4bd6-9417-579cbd97eb25",
+        "id": "70f65894-17d6-4c0b-9a95-7e828f0fe8b2",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -4852,40 +4846,40 @@
             ".ci"
            ],
            "rColumns": [
-            "d51f5e2b22e94af3ce00cabfcfaa9b09d8acfc8f09078b8c2d8d941476175a8c._rids"
+            "1949c85a5594cd4b2ebb9148264910737e7e08a8302b2bc677f13864f03a6c09._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "d51f5e2b22e94af3ce00cabfcfaa9b09d8acfc8f09078b8c2d8d941476175a8c",
+           "id": "1949c85a5594cd4b2ebb9148264910737e7e08a8302b2bc677f13864f03a6c09",
            "index": 0
           }
          }
         ],
         "mainRelation": {
          "kind": "SimpleRelation",
-         "id": "17979b69979539e80c002e2ee62646b2ebd610728661ff208aaf101d2d6ecf30",
+         "id": "30a13069eb6ad20300bc01e1b360341d03e72129431d15c19eb5dac93400405e",
          "index": 0
         }
        },
        "inNames": [
         ".ci",
         "hc.corder",
-        "17979b69979539e80c002e2ee62646b2ebd610728661ff208aaf101d2d6ecf30._rids",
-        "17979b69979539e80c002e2ee62646b2ebd610728661ff208aaf101d2d6ecf30.tlbId",
+        "30a13069eb6ad20300bc01e1b360341d03e72129431d15c19eb5dac93400405e._rids",
+        "30a13069eb6ad20300bc01e1b360341d03e72129431d15c19eb5dac93400405e.tlbId",
         "enrich..cluster_id",
-        "d51f5e2b22e94af3ce00cabfcfaa9b09d8acfc8f09078b8c2d8d941476175a8c._rids",
-        "d51f5e2b22e94af3ce00cabfcfaa9b09d8acfc8f09078b8c2d8d941476175a8c.tlbId",
+        "1949c85a5594cd4b2ebb9148264910737e7e08a8302b2bc677f13864f03a6c09._rids",
+        "1949c85a5594cd4b2ebb9148264910737e7e08a8302b2bc677f13864f03a6c09.tlbId",
         "enrich..cluster_id"
        ],
        "outNames": [
         ".ci",
         "hc.corder",
-        "17979b69979539e80c002e2ee62646b2ebd610728661ff208aaf101d2d6ecf30._rids",
-        "17979b69979539e80c002e2ee62646b2ebd610728661ff208aaf101d2d6ecf30.tlbId",
+        "30a13069eb6ad20300bc01e1b360341d03e72129431d15c19eb5dac93400405e._rids",
+        "30a13069eb6ad20300bc01e1b360341d03e72129431d15c19eb5dac93400405e.tlbId",
         "enrich..cluster_id",
-        "d51f5e2b22e94af3ce00cabfcfaa9b09d8acfc8f09078b8c2d8d941476175a8c._rids",
-        "d51f5e2b22e94af3ce00cabfcfaa9b09d8acfc8f09078b8c2d8d941476175a8c.tlbId",
+        "1949c85a5594cd4b2ebb9148264910737e7e08a8302b2bc677f13864f03a6c09._rids",
+        "1949c85a5594cd4b2ebb9148264910737e7e08a8302b2bc677f13864f03a6c09.tlbId",
         "hc..cluster_id"
        ]
       }
@@ -4904,10 +4898,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "a3731278-92a3-4df4-8fb0-45299893993f",
+       "id": "8db5be60-5f00-462f-95b1-d6628a8cecc4",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "4e5d2b0e-f1cc-42a0-8a3c-af5996294c99",
+        "id": "854a4ff4-3c2a-4c0b-9a3f-b6fbb4cdc25d",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -4918,40 +4912,40 @@
             ".ri"
            ],
            "rColumns": [
-            "da5f9c7737da389cbbf450292e51f1b8d105eac4957fc3d0f527212a9b1099ad._rids"
+            "b1806ae9d77b52356c3e4eeeac56a17203a16f09e23e282b2f1a63cf3b3b383e._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "da5f9c7737da389cbbf450292e51f1b8d105eac4957fc3d0f527212a9b1099ad",
+           "id": "b1806ae9d77b52356c3e4eeeac56a17203a16f09e23e282b2f1a63cf3b3b383e",
            "index": 0
           }
          }
         ],
         "mainRelation": {
          "kind": "SimpleRelation",
-         "id": "570831a9f8469d69e880c4696fe8164f01582267a473a4e99d46b023019f8fa9",
+         "id": "0c4519f631c5806819173ed2d3487b116dec7be8a182ddf8133070a10525b209",
          "index": 0
         }
        },
        "inNames": [
         ".ri",
         "hc.rorder",
-        "570831a9f8469d69e880c4696fe8164f01582267a473a4e99d46b023019f8fa9._rids",
-        "570831a9f8469d69e880c4696fe8164f01582267a473a4e99d46b023019f8fa9.tlbId",
+        "0c4519f631c5806819173ed2d3487b116dec7be8a182ddf8133070a10525b209._rids",
+        "0c4519f631c5806819173ed2d3487b116dec7be8a182ddf8133070a10525b209.tlbId",
         "enrich..channel_description",
-        "da5f9c7737da389cbbf450292e51f1b8d105eac4957fc3d0f527212a9b1099ad._rids",
-        "da5f9c7737da389cbbf450292e51f1b8d105eac4957fc3d0f527212a9b1099ad.tlbId",
+        "b1806ae9d77b52356c3e4eeeac56a17203a16f09e23e282b2f1a63cf3b3b383e._rids",
+        "b1806ae9d77b52356c3e4eeeac56a17203a16f09e23e282b2f1a63cf3b3b383e.tlbId",
         "enrich..channel_description"
        ],
        "outNames": [
         ".ri",
         "hc.rorder",
-        "570831a9f8469d69e880c4696fe8164f01582267a473a4e99d46b023019f8fa9._rids",
-        "570831a9f8469d69e880c4696fe8164f01582267a473a4e99d46b023019f8fa9.tlbId",
+        "0c4519f631c5806819173ed2d3487b116dec7be8a182ddf8133070a10525b209._rids",
+        "0c4519f631c5806819173ed2d3487b116dec7be8a182ddf8133070a10525b209.tlbId",
         "enrich..channel_description",
-        "da5f9c7737da389cbbf450292e51f1b8d105eac4957fc3d0f527212a9b1099ad._rids",
-        "da5f9c7737da389cbbf450292e51f1b8d105eac4957fc3d0f527212a9b1099ad.tlbId",
+        "b1806ae9d77b52356c3e4eeeac56a17203a16f09e23e282b2f1a63cf3b3b383e._rids",
+        "b1806ae9d77b52356c3e4eeeac56a17203a16f09e23e282b2f1a63cf3b3b383e.tlbId",
         "hc..channel_description"
        ]
       }
@@ -4959,7 +4953,7 @@
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "85b720f4-c076-44d3-a412-b16f8f77e1dc"
+     "id": "2dbe95be-6975-48a3-b488-7c8fe3090485"
     }
    },
    "parentDataStepId": ""
@@ -5000,7 +4994,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61edd883",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884cefaf",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5515,7 +5509,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "a9acf4b5-f4e4-4c00-a01a-dbd052a3279d",
+    "id": "6dcc7582-a384-412c-84c9-58f5af10cff4",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -5527,14 +5521,14 @@
       },
       "rightRelation": {
        "kind": "SimpleRelation",
-       "id": "5e66d2da4bed5e4ec8cc120285c854cf7b0a05078f7c2873343c7e22d54af405",
+       "id": "498f5063aa4ab8c5e2532ea7e9dbf8d516beac35974176f1b84a70501c987f2d",
        "index": 0
       }
      }
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "56fb58c5-d7f5-487d-8d1a-1040069df85f"
+     "id": "ef514375-75cf-4bb5-887e-61d8d145b739"
     }
    },
    "parentDataStepId": ""
@@ -5575,7 +5569,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ede7d3",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884d6715",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5931,7 +5925,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "edb43763-0550-4696-bd3a-6b6efc3cb282",
+    "id": "c977e936-0582-41e4-9cf5-5e549848b7c3",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -5943,14 +5937,14 @@
       },
       "rightRelation": {
        "kind": "SimpleRelation",
-       "id": "1758e3155b451b217e1e2865dd4791bccbda50d199fc15a272359a5f508dbe4b",
+       "id": "cc36525ccec51b41eb6f2fec1c430dde596956c157daeea2ccd66de018a394a1",
        "index": 0
       }
      }
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "9cff5dcc-13f0-4fed-8606-a55622fa7543"
+     "id": "6acf8c35-b9ca-49e1-a421-bbdcb51083bd"
     }
    },
    "parentDataStepId": ""
@@ -6034,12 +6028,12 @@
     "topLeft": {
      "kind": "Point",
      "x": 524.3380764770509,
-     "y": 385.5
+     "y": 384.5
     }
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61eed8c7",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884fc3d4",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6223,7 +6217,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 18
+     "nRows": 19
     },
     "filters": {
      "kind": "Filters",
@@ -6423,7 +6417,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "18d1c259-375c-42a9-be8a-f7095fa135b1",
+    "id": "080c7c7d-d4ba-43d4-ab4b-8a29a97d850a",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -6435,14 +6429,14 @@
       },
       "rightRelation": {
        "kind": "SimpleRelation",
-       "id": "fa84f9418c262701757ad297092d0df5712cf6d79fd8cd20692418f7ca63fafa",
+       "id": "4f6b61354b1c5cbca6794fa29e839f3c1643787c502f30cd3b01e61e922de7e9",
        "index": 0
       }
      }
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "1e26771a-4e5d-48ae-88e8-180c77c73a91"
+     "id": "265273d0-8f80-484d-b3af-2694fb752cb2"
     }
    },
    "parentDataStepId": ""
@@ -6568,7 +6562,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ede8e3",
+    "taskId": "e3fcb9e9cce5bf8280a0a625884d4cef",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6747,7 +6741,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "5",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -6827,7 +6821,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "79fce46d-c3ec-4f71-b6b0-780a829c527f",
+    "id": "70ffafe2-c525-4916-85ef-5b4f0fbe1783",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -6845,10 +6839,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "74b47872-63a5-47d9-a49c-b1a001570660",
+       "id": "53b83ef2-2f22-4f7b-888e-977688e103ec",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "25e0df45-8c24-43f5-ace6-23d5e377d663",
+        "id": "9f82ad68-43c7-457e-a001-7a3f5792326f",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -6859,12 +6853,12 @@
             ".ci"
            ],
            "rColumns": [
-            "3730eca9d2ddb68ac26588d286840ffc6c2cd82152ae862597c867f443d44c97._rids"
+            "b7307637e978a3fa17a0048d1c7c0ebd73b6abd8ae1c814d30469420e1b37fa5._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "3730eca9d2ddb68ac26588d286840ffc6c2cd82152ae862597c867f443d44c97",
+           "id": "b7307637e978a3fa17a0048d1c7c0ebd73b6abd8ae1c814d30469420e1b37fa5",
            "index": 0
           }
          },
@@ -6877,19 +6871,19 @@
             ".ri"
            ],
            "rColumns": [
-            "ec45ae800b69bb7c005c4c322f1b9aa9120804eb305f096ff355f5a77c3feda7._rids"
+            "00abe05fef569d227797a8dec542808f47071976fda15b1fb7a7ae0dfe029f03._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "ec45ae800b69bb7c005c4c322f1b9aa9120804eb305f096ff355f5a77c3feda7",
+           "id": "00abe05fef569d227797a8dec542808f47071976fda15b1fb7a7ae0dfe029f03",
            "index": 0
           }
          }
         ],
         "mainRelation": {
          "kind": "SimpleRelation",
-         "id": "19d6ccd580e48060e4ed69385f1bfb784860861e1015f6cebf5dd6be435d85fb",
+         "id": "5fb1ac6ef6e6f720ec8f55650885cf46d7d29b6fd0f9cb92038676d877186cd1",
          "index": 0
         }
        },
@@ -6900,14 +6894,14 @@
         "prop.prop_per_row",
         "prop.prop_per_col",
         "prop.prop_overall",
-        "19d6ccd580e48060e4ed69385f1bfb784860861e1015f6cebf5dd6be435d85fb._rids",
-        "19d6ccd580e48060e4ed69385f1bfb784860861e1015f6cebf5dd6be435d85fb.tlbId",
+        "5fb1ac6ef6e6f720ec8f55650885cf46d7d29b6fd0f9cb92038676d877186cd1._rids",
+        "5fb1ac6ef6e6f720ec8f55650885cf46d7d29b6fd0f9cb92038676d877186cd1.tlbId",
         "enrich..cluster_id",
-        "3730eca9d2ddb68ac26588d286840ffc6c2cd82152ae862597c867f443d44c97._rids",
-        "3730eca9d2ddb68ac26588d286840ffc6c2cd82152ae862597c867f443d44c97.tlbId",
+        "b7307637e978a3fa17a0048d1c7c0ebd73b6abd8ae1c814d30469420e1b37fa5._rids",
+        "b7307637e978a3fa17a0048d1c7c0ebd73b6abd8ae1c814d30469420e1b37fa5.tlbId",
         "filename",
-        "ec45ae800b69bb7c005c4c322f1b9aa9120804eb305f096ff355f5a77c3feda7._rids",
-        "ec45ae800b69bb7c005c4c322f1b9aa9120804eb305f096ff355f5a77c3feda7.tlbId",
+        "00abe05fef569d227797a8dec542808f47071976fda15b1fb7a7ae0dfe029f03._rids",
+        "00abe05fef569d227797a8dec542808f47071976fda15b1fb7a7ae0dfe029f03.tlbId",
         "enrich..cluster_id",
         "filename"
        ],
@@ -6918,14 +6912,14 @@
         "prop.prop_per_row",
         "prop.prop_per_col",
         "prop.prop_overall",
-        "19d6ccd580e48060e4ed69385f1bfb784860861e1015f6cebf5dd6be435d85fb._rids",
-        "19d6ccd580e48060e4ed69385f1bfb784860861e1015f6cebf5dd6be435d85fb.tlbId",
+        "5fb1ac6ef6e6f720ec8f55650885cf46d7d29b6fd0f9cb92038676d877186cd1._rids",
+        "5fb1ac6ef6e6f720ec8f55650885cf46d7d29b6fd0f9cb92038676d877186cd1.tlbId",
         "enrich..cluster_id",
-        "3730eca9d2ddb68ac26588d286840ffc6c2cd82152ae862597c867f443d44c97._rids",
-        "3730eca9d2ddb68ac26588d286840ffc6c2cd82152ae862597c867f443d44c97.tlbId",
+        "b7307637e978a3fa17a0048d1c7c0ebd73b6abd8ae1c814d30469420e1b37fa5._rids",
+        "b7307637e978a3fa17a0048d1c7c0ebd73b6abd8ae1c814d30469420e1b37fa5.tlbId",
         "filename",
-        "ec45ae800b69bb7c005c4c322f1b9aa9120804eb305f096ff355f5a77c3feda7._rids",
-        "ec45ae800b69bb7c005c4c322f1b9aa9120804eb305f096ff355f5a77c3feda7.tlbId",
+        "00abe05fef569d227797a8dec542808f47071976fda15b1fb7a7ae0dfe029f03._rids",
+        "00abe05fef569d227797a8dec542808f47071976fda15b1fb7a7ae0dfe029f03.tlbId",
         "prop..cluster_id",
         "prop..filename"
        ]
@@ -6934,7 +6928,7 @@
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "e48432df-6382-4813-9a19-f1e6d05676cb"
+     "id": "818a7454-836e-41bb-baeb-57c265081452"
     }
    },
    "parentDataStepId": ""
@@ -7018,12 +7012,12 @@
     "topLeft": {
      "kind": "Point",
      "x": 459.2389276123047,
-     "y": 273.5
+     "y": 272.5
     }
    },
    "state": {
     "kind": "StepState",
-    "taskId": "1a50452c6b53f0ad249e344f61ef54ea",
+    "taskId": "e3fcb9e9cce5bf8280a0a625885041bb",
     "taskState": {
      "kind": "DoneState"
     }
@@ -7389,7 +7383,7 @@
    },
    "computedRelation": {
     "kind": "CompositeRelation",
-    "id": "e9dff9b5-1a7e-4196-85b1-8276dabcef17",
+    "id": "cb8b29cb-f24d-457f-a20a-ea609e366f7a",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -7401,14 +7395,14 @@
       },
       "rightRelation": {
        "kind": "SimpleRelation",
-       "id": "e6e3b9ff9459834decae66a23cab0c0f3cf6e33d718af0c0ae46300359561c65",
+       "id": "0c86ef7a76f00f93a0e56c92f0f36e6e43157b15b21df810905d533a87c8ac10",
        "index": 0
       }
      }
     ],
     "mainRelation": {
      "kind": "Relation",
-     "id": "5372cc5e-cc06-43db-b0af-afb0305840ba"
+     "id": "e042db0d-3ae8-450b-91a2-9f5acc9157af"
     }
    },
    "parentDataStepId": ""
