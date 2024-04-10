@@ -6,52 +6,16 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+' # Push events to any matching semantic tag
 
 jobs:
-  build:
+  TestTemplate:
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: tercen/actions/start-tercen@main
-    - name: docker login
-      run: |
-        docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_PASSWORD }}
-    - name: Install Template Runner
-      run: docker pull tercen/workflow_runner:latest
-    - name: Test template 
-      id: run_test
-      run: |
-        docker run -t --net=host tercen/workflow_runner:latest \
-          --templateRepo=${GITHUB_REPOSITORY} \
-          --templateFolder=workflow_tests \
-          --tag=${GITHUB_REF##*/} \
-          --user=${{ secrets.TERCEN_TEST_OPERATOR_USERNAME }} \
-          --passw=${{ secrets.TERCEN_TEST_OPERATOR_PASSWORD }} \
-          --opMem="500000000" \
-          --serviceUri=${{ secrets.TERCEN_TEST_OPERATOR_URI }} \
-          --gitToken=${{ github.token }}  \
-          --report
-    - name: 'Upload Artifact'
-      uses: actions/upload-artifact@v3
-      with:
-        name: TestResults
-        path: test_results.json
-        retention-days: 1
-    - name: 'Create Tercen Logs'
-      if: always()  
-      run: docker logs start-tercen_tercen_1 
-      working-directory: ${{ github.action_path }}
-    - name: Create required package.json
-      run: echo '{}' > package.json
-    - name: Build changelog
-      id: Changelog
-      uses: tercen/generate-changelog-action@master
-    - name: Create release
-      id: create_release
-      uses: actions/create-release@latest
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        body: ${{steps.Changelog.outputs.changelog}}
-        draft: false
-        prerelease: false
-        
+      - uses: tercen/actions/workflow-release@main
+        with:
+          git-repository: ${GITHUB_REPOSITORY}
+          service-uri: ${{ secrets.TERCEN_TEST_OPERATOR_URI }}
+          tag: ${GITHUB_REF##*/}
+          git-token: ${{ github.token }}
+          docker-username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          docker-password: ${{ secrets.DOCKER_HUB_PASSWORD }}
