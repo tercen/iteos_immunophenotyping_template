@@ -23,6 +23,8 @@ jobs:
           git-repository: ${GITHUB_REPOSITORY}
           service-uri: ${{ secrets.TERCEN_TEST_OPERATOR_URI }}
           git-token: ${{ github.token }}
+          tercen-username: ${{ secrets.TERCEN_TEST_OPERATOR_USERNAME }}
+          tercen-password: ${{ secrets.TERCEN_TEST_OPERATOR_PASSWORD }}
           docker-username: ${{ secrets.DOCKER_HUB_USERNAME }}
           docker-password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
