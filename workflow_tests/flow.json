@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "23",
+ "id": "13",
  "isDeleted": false,
  "rev": "",
  "description": "Gold standard",
@@ -32,7 +32,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "17",
+ "folderId": "8",
  "links": [
   {
    "kind": "Link",
@@ -275,7 +275,8 @@
      "kind": "UnionRelation",
      "id": "82d1fd24-6472-4b56-b2f5-e5eb591d3b11",
      "relations": []
-    }
+    },
+    "filterSelector": ""
    }
   },
   {
@@ -610,7 +611,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "4",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1452,7 +1453,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "0",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1818,7 +1819,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "5",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2606,7 +2607,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "1",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3440,7 +3441,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "3",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3758,7 +3759,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "6",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5591,7 +5592,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "2",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -6395,7 +6396,8 @@
      "kind": "UnionRelation",
      "id": "2fac7308-994e-4e75-a249-bfcc44224f9b",
      "relations": []
-    }
+    },
+    "filterSelector": ""
    }
   }
  ],

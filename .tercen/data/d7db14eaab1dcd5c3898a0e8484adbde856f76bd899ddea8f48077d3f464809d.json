@@ -291,7 +291,7 @@
     "kind": "OperatorRef",
     "name": "UMAP",
     "version": "1.2.5",
-    "operatorId": "5",
+    "operatorId": "6",
     "operatorKind": "ROperator",
     "propertyValues": [
      {
