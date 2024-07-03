@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "14",
+ "id": "13",
  "isDeleted": false,
  "rev": "",
  "description": "Gold standard",
@@ -451,8 +451,7 @@
       "event_id",
       "filename"
      ]
-    },
-    "filterSelector": ""
+    }
    }
   },
   {
@@ -964,7 +963,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a0431e930",
+    "taskId": "fc1de7931f5c624b65dec9024470f8fe",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1123,7 +1122,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "1",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1372,7 +1371,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a0431f1fe",
+    "taskId": "fc1de7931f5c624b65dec9024470feb3",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1864,7 +1863,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a0432019f",
+    "taskId": "fc1de7931f5c624b65dec90244710883",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2073,7 +2072,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "4",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2220,12 +2219,12 @@
             ".ci"
            ],
            "rColumns": [
-            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids"
+            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1",
+           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a",
            "index": 0
           }
          }
@@ -2242,8 +2241,8 @@
         "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f._rids",
         "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
         "logicle..event_id"
        ],
        "outNames": [
@@ -2252,8 +2251,8 @@
         "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f._rids",
         "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
         "clust..event_id"
        ]
       }
@@ -2302,7 +2301,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a043203bb",
+    "taskId": "fc1de7931f5c624b65dec90244710a9d",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2511,7 +2510,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "6",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2697,12 +2696,12 @@
             ".ci"
            ],
            "rColumns": [
-            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids"
+            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a",
+           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1",
            "index": 0
           }
          }
@@ -2720,8 +2719,8 @@
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d._rids",
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
         "logicle..event_id"
        ],
        "outNames": [
@@ -2731,8 +2730,8 @@
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d._rids",
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
         "umap..event_id"
        ]
       }
@@ -2829,7 +2828,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a04320fc9",
+    "taskId": "fc1de7931f5c624b65dec9024471138e",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3164,7 +3163,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a04321476",
+    "taskId": "fc1de7931f5c624b65dec90244711e78",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3373,7 +3372,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "3",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3567,7 +3566,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a043214d9",
+    "taskId": "fc1de7931f5c624b65dec90244712cdf",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4122,7 +4121,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a04322157",
+    "taskId": "fc1de7931f5c624b65dec90244712e3d",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4281,7 +4280,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "2",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -4534,7 +4533,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a0432297d",
+    "taskId": "fc1de7931f5c624b65dec902447139d2",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4711,7 +4710,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "0",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -4995,7 +4994,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a04323572",
+    "taskId": "fc1de7931f5c624b65dec90244713b6f",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5570,7 +5569,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a04323e75",
+    "taskId": "fc1de7931f5c624b65dec90244714813",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6034,7 +6033,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a0432412a",
+    "taskId": "fc1de7931f5c624b65dec902447154d2",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6563,7 +6562,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a043250d0",
+    "taskId": "fc1de7931f5c624b65dec90244715ffa",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6742,7 +6741,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "5",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -7018,7 +7017,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "6457a4f62b9e85ab66657c9a04325554",
+    "taskId": "fc1de7931f5c624b65dec902447164d8",
     "taskState": {
      "kind": "DoneState"
     }
@@ -7711,8 +7710,7 @@
       "channel_id",
       "rowId"
      ]
-    },
-    "filterSelector": ""
+    }
    }
   }
  ],
