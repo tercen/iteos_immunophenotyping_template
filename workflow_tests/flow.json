@@ -3,7 +3,7 @@
  "id": "14",
  "isDeleted": false,
  "rev": "",
- "description": "Gold standard",
+ "description": "Template",
  "name": "flow",
  "acl": {
   "kind": "Acl",
@@ -231,6 +231,12 @@
    "id": "8ea66b10-f3f9-46e3-935a-099a3bbc3d64",
    "inputId": "78726478-262f-40bd-acbd-8bed9ce0e274-i-0",
    "outputId": "a44d8cb8-dfef-45ee-8a51-a9f3e55d4aef-o-0"
+  },
+  {
+   "kind": "Link",
+   "id": "0890cb25-d67e-4ce3-b649-085d374c18a5",
+   "inputId": "30f47b19-65d9-41ff-9288-d28fe372d101-i-0",
+   "outputId": "efcda46b-79e3-4748-9755-64a12e52626d-o-0"
   }
  ],
  "steps": [
@@ -273,9 +279,10 @@
     "kind": "TableStepModel",
     "relation": {
      "kind": "UnionRelation",
-     "id": "82d1fd24-6472-4b56-b2f5-e5eb591d3b11",
+     "id": "b6fd101e-c7e5-4761-a11e-762fc6b8bf2d",
      "relations": []
-    }
+    },
+    "filterSelector": ""
    }
   },
   {
@@ -610,7 +617,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "4",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -711,7 +718,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "5d49e503-902a-467d-8fc3-5bd948200680"
+    "id": "a241095f-25db-4622-9209-82d4103c31fe"
    },
    "parentDataStepId": ""
   },
@@ -893,14 +900,14 @@
     },
     "columnTable": {
      "kind": "CrosstabTable",
-     "cellSize": 246.0,
+     "cellSize": 250.0,
      "offset": 0,
      "graphicalFactors": [
       {
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "logicle..variable",
+        "name": "filename",
         "type": "string"
        },
        "rectangle": {
@@ -908,27 +915,6 @@
         "extent": {
          "kind": "Point",
          "x": 0.0,
-         "y": 30.0
-        },
-        "topLeft": {
-         "kind": "Point",
-         "x": 0.0,
-         "y": 0.0
-        }
-       }
-      },
-      {
-       "kind": "GraphicalFactor",
-       "factor": {
-        "kind": "Factor",
-        "name": "logicle..channel_description",
-        "type": "string"
-       },
-       "rectangle": {
-        "kind": "Rectangle",
-        "extent": {
-         "kind": "Point",
-         "x": 280.0,
          "y": 30.0
         },
         "topLeft": {
@@ -940,32 +926,236 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 2
     },
     "filters": {
      "kind": "Filters",
      "removeNaN": true,
-     "namedFilters": []
+     "namedFilters": [
+      {
+       "kind": "NamedFilter",
+       "logical": "or",
+       "not": true,
+       "filterExprs": [
+        {
+         "kind": "FilterExpr",
+         "filterOp": "equals",
+         "stringValue": "",
+         "factor": {
+          "kind": "Factor",
+          "name": "logicle..channel_description",
+          "type": "string"
+         }
+        }
+       ],
+       "meta": [],
+       "name": "Exclude"
+      }
+     ]
     },
     "operatorSettings": {
      "kind": "OperatorSettings",
      "namespace": "dist",
      "operatorRef": {
       "kind": "OperatorRef",
-      "name": "",
-      "version": "",
-      "operatorId": "",
-      "operatorKind": "",
-      "propertyValues": [],
+      "name": "Plot",
+      "version": "0.3.5",
+      "operatorId": "13",
+      "operatorKind": "ROperator",
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "plot_type",
+        "value": "png"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "file.name.prefix",
+        "value": "Tercen_Plot"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "plot.width",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "plot.height",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "base.size",
+        "value": "11"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "x_range",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "y_range",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "xlab",
+        "value": "Value"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "ylab",
+        "value": "Count"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "title",
+        "value": "Marker Distribution"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "subtitle",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "caption",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "legend.title",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "bar.position",
+        "value": "dodge"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "theme",
+        "value": "light"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "scales",
+        "value": "fixed"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "color_scales",
+        "value": "fixed"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "rotate_x_axis",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "wrap.1d",
+        "value": "true"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "flip",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "split_cells",
+        "value": "true"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "n_cells_max",
+        "value": "50"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "heatmap_annotation",
+        "value": "none"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "default.color",
+        "value": "#36454f"
+       }
+      ],
       "url": {
        "kind": "Url",
-       "uri": ""
+       "uri": "https://github.com/tercen/plot_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Page",
+           "type": "",
+           "description": "These factor(s) will be used to produce one plot file per category.",
+           "ontologyMapping": "page",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Rows",
+           "type": "",
+           "description": "Factor(s) to stratify per row.",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Columns",
+           "type": "",
+           "description": "Factor(s) to stratify per column.",
+           "ontologyMapping": "variable",
+           "crosstabMapping": "column",
+           "cardinality": "",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Y Axis",
+             "type": "numeric",
+             "description": "Factor to use for the graph's Y axis.",
+             "ontologyMapping": "y-axis",
+             "crosstabMapping": "y",
+             "cardinality": "1",
+             "factors": []
+            },
+            {
+             "kind": "MetaFactor",
+             "name": "X Axis",
+             "type": "",
+             "description": "Factor to use for the graph's X axis.",
+             "ontologyMapping": "x-axis",
+             "crosstabMapping": "x",
+             "cardinality": "1",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": []
       }
      },
@@ -1002,22 +1192,22 @@
     },
     "rowTable": {
      "kind": "CrosstabTable",
-     "cellSize": 129.0,
+     "cellSize": 123.0,
      "offset": 0,
      "graphicalFactors": [
       {
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "filename",
+        "name": "logicle..channel_description",
         "type": "string"
        },
        "rectangle": {
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 80.0,
-         "y": 30.0
+         "x": 181.0,
+         "y": 0.0
         },
         "topLeft": {
          "kind": "Point",
@@ -1028,13 +1218,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 65
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "bccf3106-2090-461b-9a7f-2390526c57a2"
+    "id": "fe4279ef-d767-4799-86a6-f735b996ebf0"
    },
    "parentDataStepId": ""
   },
@@ -1078,7 +1268,7 @@
    "kind": "OutStep",
    "id": "3464ba71-6798-40a5-a97d-04fedee0d9d0",
    "groupId": "749dad6f-f03a-43d9-8903-9b75ad2d1ad6",
-   "name": "Output",
+   "name": "Z. Output",
    "inputs": [
     {
      "kind": "InputPort",
@@ -1139,7 +1329,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 242.505,
-     "y": 369.5
+     "y": 368.5
     }
    },
    "state": {
@@ -1204,7 +1394,7 @@
    "groupPortPosition": {
     "kind": "Point",
     "x": 354.89783752441406,
-    "y": 361.5
+    "y": 360.5
    }
   },
   {
@@ -1388,7 +1578,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 5000
     },
     "filters": {
      "kind": "Filters",
@@ -1452,7 +1642,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "0",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1563,13 +1753,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 67
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "fb02ab40-6f9c-4a1c-99d1-37f0efd8fa9b"
+    "id": "7bc4292d-bb95-4d7a-ac60-3d61e82b4def"
    },
    "parentDataStepId": ""
   },
@@ -1754,7 +1944,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 5000
     },
     "filters": {
      "kind": "Filters",
@@ -1818,7 +2008,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "5",
+      "operatorId": "7",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1968,13 +2158,13 @@
        }
       }
      ],
-     "nRows": 1
+     "nRows": 67
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "c3747adc-2cdd-4191-84b2-602fd09d1656"
+    "id": "45b8bf79-9aa6-4d3f-b9b7-099a5ff0e08a"
    },
    "parentDataStepId": ""
   },
@@ -1982,7 +2172,7 @@
    "kind": "OutStep",
    "id": "71a74986-bb00-4eb0-bb50-fed26a17daa5",
    "groupId": "1152a756-88e2-4e5d-8cc4-7de45bd6c20c",
-   "name": "Output",
+   "name": "Z. Output",
    "inputs": [
     {
      "kind": "InputPort",
@@ -2008,8 +2198,8 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 253.58218658447265,
-     "y": 525.5
+     "x": 254.58218658447265,
+     "y": 526.5
     }
    },
    "state": {
@@ -2023,7 +2213,7 @@
    "groupPortPosition": {
     "kind": "Point",
     "x": 354.89783752441406,
-    "y": 424.5
+    "y": 423.5
    }
   },
   {
@@ -2357,7 +2547,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "b07eb222-f420-4c5d-b3e9-7ba6b1499423"
+    "id": "4840f54b-3eba-4ec9-9f1a-97cddb1585e9"
    },
    "parentDataStepId": ""
   },
@@ -2606,7 +2796,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "1",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -2680,13 +2870,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 18
+     "nRows": 16
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "dd4e770e-8926-4080-ab70-569b672e6828"
+    "id": "39ae6bdd-75dd-4f78-bb02-0698b5f30c3a"
    },
    "parentDataStepId": ""
   },
@@ -2721,7 +2911,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 839.2773818969727,
-     "y": 361.5
+     "y": 360.5
     }
    },
    "state": {
@@ -2762,22 +2952,28 @@
         "palette": {
          "kind": "RampPalette",
          "backcolor": 0,
-         "properties": [],
+         "properties": [
+          {
+           "kind": "PropertyValue",
+           "name": "name",
+           "value": "Viridis"
+          },
+          {
+           "kind": "PropertyValue",
+           "name": "type",
+           "value": "sequential"
+          }
+         ],
          "isUserDefined": true,
          "doubleColorElements": [
           {
            "kind": "DoubleColorElement",
-           "color": 16053493,
+           "color": 4456788,
            "stringValue": "0"
           },
           {
            "kind": "DoubleColorElement",
-           "color": 11588820,
-           "stringValue": "2"
-          },
-          {
-           "kind": "DoubleColorElement",
-           "color": 16281172,
+           "color": 16639781,
            "stringValue": "4.3645673282421384"
           }
          ]
@@ -2864,7 +3060,7 @@
     },
     "columnTable": {
      "kind": "CrosstabTable",
-     "cellSize": 222.0,
+     "cellSize": 90.93119999999999,
      "offset": 0,
      "graphicalFactors": [
       {
@@ -2952,20 +3148,204 @@
      "namespace": "umap3",
      "operatorRef": {
       "kind": "OperatorRef",
-      "name": "",
-      "version": "",
-      "operatorId": "",
-      "operatorKind": "",
-      "propertyValues": [],
+      "name": "Plot",
+      "version": "0.3.5",
+      "operatorId": "13",
+      "operatorKind": "ROperator",
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "plot_type",
+        "value": "png"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "file.name.prefix",
+        "value": "Tercen_Plot"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "plot.width",
+        "value": "2000"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "plot.height",
+        "value": "2000"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "base.size",
+        "value": "11"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "x_range",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "y_range",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "xlab",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "ylab",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "title",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "subtitle",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "caption",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "legend.title",
+        "value": ""
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "bar.position",
+        "value": "dodge"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "theme",
+        "value": "light"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "scales",
+        "value": "fixed"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "color_scales",
+        "value": "fixed"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "rotate_x_axis",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "wrap.1d",
+        "value": "true"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "flip",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "split_cells",
+        "value": "false"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "n_cells_max",
+        "value": "50"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "heatmap_annotation",
+        "value": "none"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "default.color",
+        "value": "#36454f"
+       }
+      ],
       "url": {
        "kind": "Url",
-       "uri": ""
+       "uri": "https://github.com/tercen/plot_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Page",
+           "type": "",
+           "description": "These factor(s) will be used to produce one plot file per category.",
+           "ontologyMapping": "page",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Rows",
+           "type": "",
+           "description": "Factor(s) to stratify per row.",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Columns",
+           "type": "",
+           "description": "Factor(s) to stratify per column.",
+           "ontologyMapping": "variable",
+           "crosstabMapping": "column",
+           "cardinality": "",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Y Axis",
+             "type": "numeric",
+             "description": "Factor to use for the graph's Y axis.",
+             "ontologyMapping": "y-axis",
+             "crosstabMapping": "y",
+             "cardinality": "1",
+             "factors": []
+            },
+            {
+             "kind": "MetaFactor",
+             "name": "X Axis",
+             "type": "",
+             "description": "Factor to use for the graph's X axis.",
+             "ontologyMapping": "x-axis",
+             "crosstabMapping": "x",
+             "cardinality": "1",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": []
       }
      },
@@ -2994,6 +3374,11 @@
        "kind": "Pair",
        "key": "debug",
        "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "preferred.run.ctx",
+       "value": ""
       }
      ],
      "operatorModel": {
@@ -3002,7 +3387,7 @@
     },
     "rowTable": {
      "kind": "CrosstabTable",
-     "cellSize": 216.5,
+     "cellSize": 94.5,
      "offset": 1,
      "graphicalFactors": [
       {
@@ -3027,28 +3412,14 @@
        }
       }
      ],
-     "rectangleSelections": [
-      {
-       "kind": "Rectangle",
-       "extent": {
-        "kind": "Point",
-        "x": 0.0,
-        "y": 0.0
-       },
-       "topLeft": {
-        "kind": "Point",
-        "x": 0.0,
-        "y": 14.0
-       }
-      }
-     ],
-     "nRows": 1
+     "rectangleSelections": [],
+     "nRows": 66
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "ba475c7e-d20b-481c-93a1-cf8be293de66"
+    "id": "f6f034d9-5d1a-48cd-8828-ae502d0fa40b"
    },
    "parentDataStepId": ""
   },
@@ -3193,8 +3564,8 @@
    "version": "",
    "offset": {
     "kind": "Point",
-    "x": -1.0,
-    "y": 0.0
+    "x": -206.0,
+    "y": -10.0
    }
   },
   {
@@ -3440,7 +3811,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "3",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3541,7 +3912,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "bb82caeb-b570-45e3-b1f4-ea1018af397f"
+    "id": "fad84705-cc41-49cb-b8ce-aff24803559d"
    },
    "parentDataStepId": ""
   },
@@ -3758,7 +4129,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "6",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -3864,7 +4235,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "6cbd055c-792b-43d3-9868-8ec3009d4a90"
+    "id": "dc638c6b-e554-4e97-8b14-3ad9fb0da1b3"
    },
    "parentDataStepId": ""
   },
@@ -4227,14 +4598,19 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Plot",
-      "version": "0.1.6",
-      "operatorId": "7",
+      "version": "0.3.5",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
         "kind": "PropertyValue",
         "name": "plot_type",
         "value": "png"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "file.name.prefix",
+        "value": "Tercen_Plot"
        },
        {
         "kind": "PropertyValue",
@@ -4264,17 +4640,17 @@
        {
         "kind": "PropertyValue",
         "name": "xlab",
-        "value": ""
+        "value": "UMAP 1"
        },
        {
         "kind": "PropertyValue",
         "name": "ylab",
-        "value": ""
+        "value": "UMAP 2"
        },
        {
         "kind": "PropertyValue",
         "name": "title",
-        "value": ""
+        "value": "UMAP Colored by Cluster"
        },
        {
         "kind": "PropertyValue",
@@ -4304,6 +4680,11 @@
        {
         "kind": "PropertyValue",
         "name": "scales",
+        "value": "fixed"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "color_scales",
         "value": "fixed"
        },
        {
@@ -4348,9 +4729,72 @@
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Page",
+           "type": "",
+           "description": "These factor(s) will be used to produce one plot file per category.",
+           "ontologyMapping": "page",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Rows",
+           "type": "",
+           "description": "Factor(s) to stratify per row.",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Columns",
+           "type": "",
+           "description": "Factor(s) to stratify per column.",
+           "ontologyMapping": "variable",
+           "crosstabMapping": "column",
+           "cardinality": "",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Y Axis",
+             "type": "numeric",
+             "description": "Factor to use for the graph's Y axis.",
+             "ontologyMapping": "y-axis",
+             "crosstabMapping": "y",
+             "cardinality": "1",
+             "factors": []
+            },
+            {
+             "kind": "MetaFactor",
+             "name": "X Axis",
+             "type": "",
+             "description": "Factor to use for the graph's X axis.",
+             "ontologyMapping": "x-axis",
+             "crosstabMapping": "x",
+             "cardinality": "1",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": []
       }
      },
@@ -4419,7 +4863,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "80a12885-19e9-426f-85f0-a6a8da2ee9aa"
+    "id": "8c740a62-a156-47db-8f6e-8cde3574541f"
    },
    "parentDataStepId": ""
   },
@@ -4481,7 +4925,7 @@
          "properties": [],
          "propertyValues": []
         },
-        "pointSize": 5
+        "pointSize": 4
        },
        "colors": {
         "kind": "Colors",
@@ -4559,7 +5003,18 @@
         },
         "axisSettings": {
          "kind": "AxisSettings",
-         "meta": []
+         "meta": [
+          {
+           "kind": "Pair",
+           "key": "axisType",
+           "value": "row"
+          },
+          {
+           "kind": "Pair",
+           "key": "includeZero",
+           "value": "true"
+          }
+         ]
         },
         "graphicalFactor": {
          "kind": "GraphicalFactor",
@@ -4630,7 +5085,7 @@
         {
          "kind": "FilterExpr",
          "filterOp": "less",
-         "stringValue": "0.01",
+         "stringValue": "0.001",
          "factor": {
           "kind": "Factor",
           "name": "enrich.p_value",
@@ -4648,125 +5103,14 @@
      "namespace": "ds20",
      "operatorRef": {
       "kind": "OperatorRef",
-      "name": "Plot",
-      "version": "0.1.6",
-      "operatorId": "7",
-      "operatorKind": "ROperator",
-      "propertyValues": [
-       {
-        "kind": "PropertyValue",
-        "name": "plot_type",
-        "value": "png"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "plot.width",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "plot.height",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "base.size",
-        "value": "14"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "x_range",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "y_range",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "xlab",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "ylab",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "title",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "subtitle",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "caption",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "legend.title",
-        "value": ""
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "bar.position",
-        "value": "dodge"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "theme",
-        "value": "light"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "scales",
-        "value": "fixed"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "rotate_x_axis",
-        "value": "false"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "wrap.1d",
-        "value": "true"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "flip",
-        "value": "false"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "split_cells",
-        "value": "false"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "n_cells_max",
-        "value": "50"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "heatmap_annotation",
-        "value": "none"
-       },
-       {
-        "kind": "PropertyValue",
-        "name": "default.color",
-        "value": "#36454f"
-       }
-      ],
+      "name": "",
+      "version": "",
+      "operatorId": "",
+      "operatorKind": "",
+      "propertyValues": [],
       "url": {
        "kind": "Url",
-       "uri": "https://github.com/tercen/plot_operator"
+       "uri": ""
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
@@ -4815,7 +5159,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "e9defc42-6f12-4fd3-a890-b7e5cc0cab50"
+    "id": "484ed44e-947a-48b7-bfef-742661cef1c3"
    },
    "parentDataStepId": ""
   },
@@ -4898,7 +5242,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 524.3380764770509,
-     "y": 385.5
+     "y": 384.5
     }
    },
    "state": {
@@ -4938,22 +5282,33 @@
         "palette": {
          "kind": "RampPalette",
          "backcolor": 0,
-         "properties": [],
+         "properties": [
+          {
+           "kind": "PropertyValue",
+           "name": "name",
+           "value": "RdBu"
+          },
+          {
+           "kind": "PropertyValue",
+           "name": "type",
+           "value": "diverging"
+          }
+         ],
          "isUserDefined": true,
          "doubleColorElements": [
           {
            "kind": "DoubleColorElement",
-           "color": 441592,
+           "color": 15698530,
            "stringValue": "-4.331660580145063"
           },
           {
            "kind": "DoubleColorElement",
-           "color": 16446968,
+           "color": 16250871,
            "stringValue": "0"
           },
           {
            "kind": "DoubleColorElement",
-           "color": 16158517,
+           "color": 6793679,
            "stringValue": "4.396293692881339"
           }
          ]
@@ -5087,7 +5442,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 18
+     "nRows": 16
     },
     "filters": {
      "kind": "Filters",
@@ -5100,14 +5455,19 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Plot",
-      "version": "0.1.6",
-      "operatorId": "7",
+      "version": "0.3.5",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
         "kind": "PropertyValue",
         "name": "plot_type",
         "value": "png"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "file.name.prefix",
+        "value": "Tercen_Plot"
        },
        {
         "kind": "PropertyValue",
@@ -5181,6 +5541,11 @@
        },
        {
         "kind": "PropertyValue",
+        "name": "color_scales",
+        "value": "fixed"
+       },
+       {
+        "kind": "PropertyValue",
         "name": "rotate_x_axis",
         "value": "false"
        },
@@ -5207,7 +5572,7 @@
        {
         "kind": "PropertyValue",
         "name": "heatmap_annotation",
-        "value": "both"
+        "value": "rows"
        },
        {
         "kind": "PropertyValue",
@@ -5221,13 +5586,107 @@
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Page",
+           "type": "",
+           "description": "These factor(s) will be used to produce one plot file per category.",
+           "ontologyMapping": "page",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Rows",
+           "type": "",
+           "description": "Factor(s) to stratify per row.",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Columns",
+           "type": "",
+           "description": "Factor(s) to stratify per column.",
+           "ontologyMapping": "variable",
+           "crosstabMapping": "column",
+           "cardinality": "",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Y Axis",
+             "type": "numeric",
+             "description": "Factor to use for the graph's Y axis.",
+             "ontologyMapping": "y-axis",
+             "crosstabMapping": "y",
+             "cardinality": "1",
+             "factors": []
+            },
+            {
+             "kind": "MetaFactor",
+             "name": "X Axis",
+             "type": "",
+             "description": "Factor to use for the graph's X axis.",
+             "ontologyMapping": "x-axis",
+             "crosstabMapping": "x",
+             "cardinality": "1",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": []
       }
      },
-     "environment": [],
+     "environment": [
+      {
+       "kind": "Pair",
+       "key": "cpu",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "ram",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "cpu-shares",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "tercen.collect.stats",
+       "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "debug",
+       "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "preferred.run.ctx",
+       "value": ""
+      }
+     ],
      "operatorModel": {
       "kind": "OperatorModel"
      }
@@ -5287,7 +5746,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "5aed42fc-72db-41b6-8db7-adec7221ebe3"
+    "id": "3cba49db-ddbf-41c5-ab2e-b50b811a568e"
    },
    "parentDataStepId": ""
   },
@@ -5591,7 +6050,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "2",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -5671,7 +6130,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "2bdc8163-9812-4b1a-83ae-1b584d1d98e4"
+    "id": "909ec486-361c-4226-a061-d550bc5aa728"
    },
    "parentDataStepId": ""
   },
@@ -5754,7 +6213,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 459.2389276123047,
-     "y": 273.5
+     "y": 272.5
     }
    },
    "state": {
@@ -5933,8 +6392,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Plot",
-      "version": "0.1.6",
-      "operatorId": "7",
+      "version": "0.3.5",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5944,13 +6403,18 @@
        },
        {
         "kind": "PropertyValue",
+        "name": "file.name.prefix",
+        "value": "Tercen_Plot"
+       },
+       {
+        "kind": "PropertyValue",
         "name": "plot.width",
-        "value": ""
+        "value": "1000"
        },
        {
         "kind": "PropertyValue",
         "name": "plot.height",
-        "value": ""
+        "value": "1000"
        },
        {
         "kind": "PropertyValue",
@@ -6014,8 +6478,13 @@
        },
        {
         "kind": "PropertyValue",
+        "name": "color_scales",
+        "value": "fixed"
+       },
+       {
+        "kind": "PropertyValue",
         "name": "rotate_x_axis",
-        "value": "false"
+        "value": "true"
        },
        {
         "kind": "PropertyValue",
@@ -6054,9 +6523,72 @@
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Page",
+           "type": "",
+           "description": "These factor(s) will be used to produce one plot file per category.",
+           "ontologyMapping": "page",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Rows",
+           "type": "",
+           "description": "Factor(s) to stratify per row.",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "row",
+           "cardinality": "",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Columns",
+           "type": "",
+           "description": "Factor(s) to stratify per column.",
+           "ontologyMapping": "variable",
+           "crosstabMapping": "column",
+           "cardinality": "",
+           "factors": []
+          }
+         ],
+         "axis": [
+          {
+           "kind": "AxisSpec",
+           "metaFactors": [
+            {
+             "kind": "MetaFactor",
+             "name": "Y Axis",
+             "type": "numeric",
+             "description": "Factor to use for the graph's Y axis.",
+             "ontologyMapping": "y-axis",
+             "crosstabMapping": "y",
+             "cardinality": "1",
+             "factors": []
+            },
+            {
+             "kind": "MetaFactor",
+             "name": "X Axis",
+             "type": "",
+             "description": "Factor to use for the graph's X axis.",
+             "ontologyMapping": "x-axis",
+             "crosstabMapping": "x",
+             "cardinality": "1",
+             "factors": []
+            }
+           ]
+          }
+         ]
+        }
+       ],
        "outputSpecs": []
       }
      },
@@ -6093,7 +6625,7 @@
     },
     "rowTable": {
      "kind": "CrosstabTable",
-     "cellSize": 250.0,
+     "cellSize": 100.0,
      "offset": 0,
      "graphicalFactors": [
       {
@@ -6119,13 +6651,13 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 18
+     "nRows": 16
     },
     "taskId": ""
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "1e8f24e3-8474-4c9d-9699-f4b5d762ff43"
+    "id": "59092728-8b11-4679-88e2-7e756f71ffbb"
    },
    "parentDataStepId": ""
   },
@@ -6372,12 +6904,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 374.9556884765625,
+     "x": 374.9554748535156,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 308.52215576171875,
+     "x": 308.5222625732422,
      "y": 149.5
     }
    },
@@ -6393,16 +6925,312 @@
     "kind": "TableStepModel",
     "relation": {
      "kind": "UnionRelation",
-     "id": "2fac7308-994e-4e75-a249-bfcc44224f9b",
+     "id": "77abd0f8-12a2-45f2-ab3a-a91f0789ce6e",
      "relations": []
-    }
+    },
+    "filterSelector": ""
    }
+  },
+  {
+   "kind": "DataStep",
+   "id": "30f47b19-65d9-41ff-9288-d28fe372d101",
+   "groupId": "",
+   "name": "Export Report",
+   "inputs": [
+    {
+     "kind": "InputPort",
+     "id": "30f47b19-65d9-41ff-9288-d28fe372d101-i-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "outputs": [
+    {
+     "kind": "OutputPort",
+     "id": "30f47b19-65d9-41ff-9288-d28fe372d101-o-0",
+     "linkType": "relation",
+     "name": "data"
+    }
+   ],
+   "rectangle": {
+    "kind": "Rectangle",
+    "extent": {
+     "kind": "Point",
+     "x": 100.65386962890625,
+     "y": 55.0
+    },
+    "topLeft": {
+     "kind": "Point",
+     "x": 308.91397369384765,
+     "y": 701.5
+    }
+   },
+   "state": {
+    "kind": "StepState",
+    "taskId": "",
+    "taskState": {
+     "kind": "InitState"
+    }
+   },
+   "description": "",
+   "model": {
+    "kind": "Crosstab",
+    "axis": {
+     "kind": "XYAxisList",
+     "rectangleSelections": [],
+     "xyAxis": [
+      {
+       "kind": "XYAxis",
+       "chart": {
+        "kind": "ChartPoint",
+        "name": "",
+        "properties": {
+         "kind": "Properties",
+         "properties": [],
+         "propertyValues": []
+        },
+        "pointSize": 4
+       },
+       "colors": {
+        "kind": "Colors",
+        "factors": [],
+        "palette": {
+         "kind": "CategoryPalette",
+         "backcolor": 0,
+         "properties": [],
+         "colorList": {
+          "kind": "ColorList",
+          "name": ""
+         },
+         "stringColorElements": []
+        }
+       },
+       "errors": {
+        "kind": "Errors",
+        "factors": []
+       },
+       "labels": {
+        "kind": "Labels",
+        "factors": []
+       },
+       "xAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "",
+          "type": "string"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "yAxis": {
+        "kind": "Axis",
+        "axisExtent": {
+         "kind": "Point",
+         "x": 80.0,
+         "y": 30.0
+        },
+        "axisSettings": {
+         "kind": "AxisSettings",
+         "meta": []
+        },
+        "graphicalFactor": {
+         "kind": "GraphicalFactor",
+         "factor": {
+          "kind": "Factor",
+          "name": "prop.n",
+          "type": "double"
+         },
+         "rectangle": {
+          "kind": "Rectangle",
+          "extent": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          },
+          "topLeft": {
+           "kind": "Point",
+           "x": 0.0,
+           "y": 0.0
+          }
+         }
+        }
+       },
+       "taskId": "",
+       "preprocessors": []
+      }
+     ]
+    },
+    "columnTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "filters": {
+     "kind": "Filters",
+     "removeNaN": true,
+     "namedFilters": []
+    },
+    "operatorSettings": {
+     "kind": "OperatorSettings",
+     "namespace": "ds0",
+     "operatorRef": {
+      "kind": "OperatorRef",
+      "name": "Export Report",
+      "version": "0.2.4",
+      "operatorId": "2",
+      "operatorKind": "DockerOperator",
+      "propertyValues": [
+       {
+        "kind": "PropertyValue",
+        "name": "OutputFormat",
+        "value": "MS-PowerPoint (*.pptx)"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "SVGOptimization",
+        "value": "Bitmap Auto"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "LabelPosition",
+        "value": "Right"
+       }
+      ],
+      "url": {
+       "kind": "Url",
+       "uri": "https://github.com/tercen/export_operator"
+      },
+      "operatorSpec": {
+       "kind": "OperatorSpec",
+       "ontologyUri": "",
+       "ontologyVersion": "",
+       "inputSpecs": [],
+       "outputSpecs": []
+      }
+     },
+     "environment": [
+      {
+       "kind": "Pair",
+       "key": "cpu",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "ram",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "cpu-shares",
+       "value": "0"
+      },
+      {
+       "kind": "Pair",
+       "key": "tercen.collect.stats",
+       "value": "false"
+      },
+      {
+       "kind": "Pair",
+       "key": "debug",
+       "value": "false"
+      }
+     ],
+     "operatorModel": {
+      "kind": "OperatorModel"
+     }
+    },
+    "rowTable": {
+     "kind": "CrosstabTable",
+     "cellSize": 250.0,
+     "offset": 0,
+     "graphicalFactors": [
+      {
+       "kind": "GraphicalFactor",
+       "factor": {
+        "kind": "Factor",
+        "name": "",
+        "type": "string"
+       },
+       "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        },
+        "topLeft": {
+         "kind": "Point",
+         "x": 0.0,
+         "y": 0.0
+        }
+       }
+      }
+     ],
+     "rectangleSelections": [],
+     "nRows": 1
+    },
+    "taskId": ""
+   },
+   "computedRelation": {
+    "kind": "Relation",
+    "id": "59d7d2b1-0053-4df2-a74a-1310ed748894"
+   },
+   "parentDataStepId": ""
   }
  ],
  "offset": {
   "kind": "Point",
-  "x": 169.0,
-  "y": -13.0
+  "x": 130.0,
+  "y": -109.0
  },
  "scale": 1.0
 }

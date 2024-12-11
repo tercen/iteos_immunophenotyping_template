@@ -1,10 +1,10 @@
 {
  "kind": "ComputedTableSchema",
- "id": "177a31d14824881fd571099c30970d06d5b6c39621f0a96e82387a0a47b24af5",
+ "id": "854ff66462eeaa437c98215388f156b6e3311dceaacedaf244017a963b4d5fa5",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "d2a3fc27-eafb-4fbc-801c-e41b12252344",
+ "name": "4434a7c2-7153-4e15-81b9-05bc81c25507",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -24,7 +24,7 @@
   {
    "kind": "Pair",
    "key": "SHA256",
-   "value": "177a31d14824881fd571099c30970d06d5b6c39621f0a96e82387a0a47b24af5"
+   "value": "854ff66462eeaa437c98215388f156b6e3311dceaacedaf244017a963b4d5fa5"
   }
  ],
  "url": {
@@ -39,7 +39,7 @@
  "columns": [
   {
    "kind": "ColumnSchema",
-   "id": "778d3d4f-d030-46aa-a220-771c316971c4",
+   "id": "c6facabf-0db3-4f9a-83c8-9955fc230136",
    "name": "filename",
    "type": "string",
    "nRows": 0,
@@ -54,7 +54,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "04b2d2b5-d627-4a62-a2eb-91c871bd33b9",
+   "id": "6bf6b0a0-9798-4ad4-8446-7ef0e168ee35",
    "name": "mimetype",
    "type": "string",
    "nRows": 0,
@@ -69,7 +69,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "b9cf0d47-53e1-4998-bbd3-e941c142c5dc",
+   "id": "ee7942fc-2240-45ed-bd95-ba03ebcb7da4",
    "name": ".content",
    "type": "string",
    "nRows": 0,
@@ -81,18 +81,48 @@
     "quartiles": [],
     "properties": []
    }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "3cf71fab-7a79-47bc-90c9-cce207c59d46",
+   "name": "plot_width",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "a3455539-6aeb-4657-a0b4-9202ebf6668a",
+   "name": "plot_height",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
   }
  ],
- "dataDirectory": "data/17/7a/177a31d14824881fd571099c30970d06d5b6c39621f0a96e82387a0a47b24af5",
+ "dataDirectory": "data/85/4f/854ff66462eeaa437c98215388f156b6e3311dceaacedaf244017a963b4d5fa5",
  "relation": {
   "kind": "Relation",
-  "id": "994825e2-b201-4370-8f5f-c8a98f847607"
+  "id": "17e42377-f358-4512-a874-2672ee99769d"
  },
  "query": {
   "kind": "CubeQuery",
   "relation": {
    "kind": "CompositeRelation",
-   "id": "32da04ff-9f56-4e95-808c-b16aac0d3829",
+   "id": "0e5ce564-8b0e-40ca-957c-8a84624e347f",
    "joinOperators": [
     {
      "kind": "JoinOperator",
@@ -108,10 +138,10 @@
      },
      "rightRelation": {
       "kind": "RenameRelation",
-      "id": "83a4605e-a95f-4d1a-b99b-59b82cc7ff34",
+      "id": "f8d93211-a0d2-4041-866c-bc33b598c428",
       "relation": {
        "kind": "CompositeRelation",
-       "id": "6fc5fc1b-b5fd-44d9-bd1f-683cb57087bf",
+       "id": "3d08ebf5-3d65-4fdc-a1e7-2df99922f269",
        "joinOperators": [
         {
          "kind": "JoinOperator",
@@ -165,7 +195,7 @@
    ],
    "mainRelation": {
     "kind": "CompositeRelation",
-    "id": "d4e85f56-5723-4dbe-b3ea-07f1565186e4",
+    "id": "f358a0aa-8aa6-4a6f-9222-2accce20e6c4",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -181,10 +211,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "cd800734-ef3d-4e26-b184-974a3881bff0",
+       "id": "c1d8eabe-feb3-4885-a066-662dbe995dc8",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "39ef4da9-006c-4eb4-b013-e88555c7e89b",
+        "id": "a55c8a5a-be6d-4224-87dd-52dd6cda09cf",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -195,12 +225,12 @@
             ".ci"
            ],
            "rColumns": [
-            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids"
+            "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1",
+           "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a",
            "index": 6
           }
          }
@@ -218,8 +248,8 @@
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d._rids",
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
         "logicle..event_id"
        ],
        "outNames": [
@@ -229,8 +259,8 @@
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d._rids",
         "d7db14eaab1dcd5c3898a0e8484adbde856f76bd899ddea8f48077d3f464809d.tlbId",
         "logicle..event_id",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
-        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
+        "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
         "umap..event_id"
        ]
       }
@@ -238,7 +268,7 @@
     ],
     "mainRelation": {
      "kind": "CompositeRelation",
-     "id": "819e0c9e-5e35-48d6-a75e-6a7b89af4c69",
+     "id": "2c65d5a9-8263-4a9b-81a0-bf32f18fe551",
      "joinOperators": [
       {
        "kind": "JoinOperator",
@@ -254,10 +284,10 @@
        },
        "rightRelation": {
         "kind": "RenameRelation",
-        "id": "dbbb3d77-4a45-449b-a94f-79183a3f871e",
+        "id": "3f27c962-24d8-4315-aca8-4c41c7400e37",
         "relation": {
          "kind": "CompositeRelation",
-         "id": "547112c7-eefd-4d3f-a775-ae4bdafbe399",
+         "id": "0d77b315-c6fb-4990-83ca-48e46b20b141",
          "joinOperators": [
           {
            "kind": "JoinOperator",
@@ -268,12 +298,12 @@
              ".ci"
             ],
             "rColumns": [
-             "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids"
+             "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids"
             ]
            },
            "rightRelation": {
             "kind": "SimpleRelation",
-            "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a",
+            "id": "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1",
             "index": 4
            }
           }
@@ -290,8 +320,8 @@
          "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f._rids",
          "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f.tlbId",
          "logicle..event_id",
-         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
-         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
+         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
+         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
          "logicle..event_id"
         ],
         "outNames": [
@@ -300,8 +330,8 @@
          "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f._rids",
          "46fd52a0a532d9027f52418ed2348b95c24f2e9ae4f22e92d81c7c1e0f06534f.tlbId",
          "logicle..event_id",
-         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a._rids",
-         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a.tlbId",
+         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1._rids",
+         "87b51dae61d4bc9bddb1f5e08dae680a232cb837c09d229c32e5389fa586914a-1.tlbId",
          "clust..event_id"
         ]
        }
@@ -309,10 +339,10 @@
      ],
      "mainRelation": {
       "kind": "RenameRelation",
-      "id": "f870d27b-2103-4d9c-91cd-0b6f6dc2afc5",
+      "id": "0b080d67-3b85-4dc5-8cd9-fe24de4b0b0e",
       "relation": {
        "kind": "CompositeRelation",
-       "id": "5d2ea7ac-3564-4091-bf8a-b9629af9063e",
+       "id": "b5911d73-2c8b-4658-9300-a4022e2e8d4d",
        "joinOperators": [
         {
          "kind": "JoinOperator",
@@ -335,7 +365,7 @@
        ],
        "mainRelation": {
         "kind": "CompositeRelation",
-        "id": "2a26d99d-a103-41d5-a837-089c7e1cdb76",
+        "id": "ba8ecb70-2b8f-429a-858b-3fb0058ee598",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -532,14 +562,19 @@
    "operatorRef": {
     "kind": "OperatorRef",
     "name": "Plot",
-    "version": "0.1.6",
-    "operatorId": "7",
+    "version": "0.3.5",
+    "operatorId": "13",
     "operatorKind": "ROperator",
     "propertyValues": [
      {
       "kind": "PropertyValue",
       "name": "plot_type",
       "value": "png"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "file.name.prefix",
+      "value": "Tercen_Plot"
      },
      {
       "kind": "PropertyValue",
@@ -569,17 +604,17 @@
      {
       "kind": "PropertyValue",
       "name": "xlab",
-      "value": ""
+      "value": "UMAP 1"
      },
      {
       "kind": "PropertyValue",
       "name": "ylab",
-      "value": ""
+      "value": "UMAP 2"
      },
      {
       "kind": "PropertyValue",
       "name": "title",
-      "value": ""
+      "value": "UMAP Colored by Cluster"
      },
      {
       "kind": "PropertyValue",
@@ -609,6 +644,11 @@
      {
       "kind": "PropertyValue",
       "name": "scales",
+      "value": "fixed"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "color_scales",
       "value": "fixed"
      },
      {
@@ -653,9 +693,72 @@
     },
     "operatorSpec": {
      "kind": "OperatorSpec",
-     "ontologyUri": "",
-     "ontologyVersion": "",
-     "inputSpecs": [],
+     "ontologyUri": "https://tercen.com/_ontology/tercen",
+     "ontologyVersion": "0.0.1",
+     "inputSpecs": [
+      {
+       "kind": "CrosstabSpec",
+       "metaFactors": [
+        {
+         "kind": "MetaFactor",
+         "name": "Page",
+         "type": "",
+         "description": "These factor(s) will be used to produce one plot file per category.",
+         "ontologyMapping": "page",
+         "crosstabMapping": "row",
+         "cardinality": "",
+         "factors": []
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "Rows",
+         "type": "",
+         "description": "Factor(s) to stratify per row.",
+         "ontologyMapping": "sample",
+         "crosstabMapping": "row",
+         "cardinality": "",
+         "factors": []
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "Columns",
+         "type": "",
+         "description": "Factor(s) to stratify per column.",
+         "ontologyMapping": "variable",
+         "crosstabMapping": "column",
+         "cardinality": "",
+         "factors": []
+        }
+       ],
+       "axis": [
+        {
+         "kind": "AxisSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Y Axis",
+           "type": "numeric",
+           "description": "Factor to use for the graph's Y axis.",
+           "ontologyMapping": "y-axis",
+           "crosstabMapping": "y",
+           "cardinality": "1",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "X Axis",
+           "type": "",
+           "description": "Factor to use for the graph's X axis.",
+           "ontologyMapping": "x-axis",
+           "crosstabMapping": "x",
+           "cardinality": "1",
+           "factors": []
+          }
+         ]
+        }
+       ]
+      }
+     ],
      "outputSpecs": []
     }
    },

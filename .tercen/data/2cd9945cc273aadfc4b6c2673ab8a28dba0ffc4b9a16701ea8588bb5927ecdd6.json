@@ -1,10 +1,10 @@
 {
  "kind": "ComputedTableSchema",
- "id": "c46f86fefbb56856f6f21def8c14896d16db790c40eb6aac17e6c4a967965059",
+ "id": "2cd9945cc273aadfc4b6c2673ab8a28dba0ffc4b9a16701ea8588bb5927ecdd6",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "44cdce7e-7891-45bf-8786-61426ddd4330",
+ "name": "1ec2190d-9885-4ec7-ac2c-2dadd8bbf3a9",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -24,7 +24,7 @@
   {
    "kind": "Pair",
    "key": "SHA256",
-   "value": "c46f86fefbb56856f6f21def8c14896d16db790c40eb6aac17e6c4a967965059"
+   "value": "2cd9945cc273aadfc4b6c2673ab8a28dba0ffc4b9a16701ea8588bb5927ecdd6"
   }
  ],
  "url": {
@@ -39,7 +39,7 @@
  "columns": [
   {
    "kind": "ColumnSchema",
-   "id": "bea936eb-4e8f-4d0b-bb3f-24be87f163b5",
+   "id": "72e1edea-ef64-4c04-bb83-4419dbf31d6c",
    "name": "filename",
    "type": "string",
    "nRows": 0,
@@ -54,7 +54,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "f09d28a3-cf0e-4680-a568-917d388cef7e",
+   "id": "bf636b9e-5655-4082-8dde-e0d328773e69",
    "name": "mimetype",
    "type": "string",
    "nRows": 0,
@@ -69,7 +69,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "29278507-1a3a-4394-a84d-ae782c390e6f",
+   "id": "12f5db6e-8397-45c4-aadb-acd2d7e122ef",
    "name": ".content",
    "type": "string",
    "nRows": 0,
@@ -81,21 +81,51 @@
     "quartiles": [],
     "properties": []
    }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "eb645e41-be19-4cb0-8ee8-013f4c712948",
+   "name": "plot_width",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "d884e46f-89ac-47c2-8f7e-30d1f4b1a7d2",
+   "name": "plot_height",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
   }
  ],
- "dataDirectory": "data/c4/6f/c46f86fefbb56856f6f21def8c14896d16db790c40eb6aac17e6c4a967965059",
+ "dataDirectory": "data/2c/d9/2cd9945cc273aadfc4b6c2673ab8a28dba0ffc4b9a16701ea8588bb5927ecdd6",
  "relation": {
   "kind": "Relation",
-  "id": "6c11f3cf-56d3-4a90-b342-8edd9dd9f465"
+  "id": "f6e4c5ea-3a98-4f78-b0d4-d5e0e9644cec"
  },
  "query": {
   "kind": "CubeQuery",
   "relation": {
    "kind": "RenameRelation",
-   "id": "a6560a11-06e3-4be4-8d70-56933f6d38e8",
+   "id": "b14e4bf3-6eb7-4494-88a0-30233721ce2c",
    "relation": {
     "kind": "CompositeRelation",
-    "id": "f49acbc7-d2f3-4814-a7ef-eb202f949923",
+    "id": "9703da76-a60e-4d08-a500-8e6c70fb20dc",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -118,7 +148,7 @@
     ],
     "mainRelation": {
      "kind": "CompositeRelation",
-     "id": "92cf1c0d-f042-4a8f-93b8-81cb4fb545e3",
+     "id": "311fe59c-9ac1-4f71-b255-3f54805193e5",
      "joinOperators": [
       {
        "kind": "JoinOperator",
@@ -248,8 +278,8 @@
    "operatorRef": {
     "kind": "OperatorRef",
     "name": "Plot",
-    "version": "0.1.6",
-    "operatorId": "7",
+    "version": "0.3.5",
+    "operatorId": "13",
     "operatorKind": "ROperator",
     "propertyValues": [
      {
@@ -259,13 +289,18 @@
      },
      {
       "kind": "PropertyValue",
+      "name": "file.name.prefix",
+      "value": "Tercen_Plot"
+     },
+     {
+      "kind": "PropertyValue",
       "name": "plot.width",
-      "value": ""
+      "value": "1000"
      },
      {
       "kind": "PropertyValue",
       "name": "plot.height",
-      "value": ""
+      "value": "1000"
      },
      {
       "kind": "PropertyValue",
@@ -329,8 +364,13 @@
      },
      {
       "kind": "PropertyValue",
+      "name": "color_scales",
+      "value": "fixed"
+     },
+     {
+      "kind": "PropertyValue",
       "name": "rotate_x_axis",
-      "value": "false"
+      "value": "true"
      },
      {
       "kind": "PropertyValue",
@@ -369,9 +409,72 @@
     },
     "operatorSpec": {
      "kind": "OperatorSpec",
-     "ontologyUri": "",
-     "ontologyVersion": "",
-     "inputSpecs": [],
+     "ontologyUri": "https://tercen.com/_ontology/tercen",
+     "ontologyVersion": "0.0.1",
+     "inputSpecs": [
+      {
+       "kind": "CrosstabSpec",
+       "metaFactors": [
+        {
+         "kind": "MetaFactor",
+         "name": "Page",
+         "type": "",
+         "description": "These factor(s) will be used to produce one plot file per category.",
+         "ontologyMapping": "page",
+         "crosstabMapping": "row",
+         "cardinality": "",
+         "factors": []
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "Rows",
+         "type": "",
+         "description": "Factor(s) to stratify per row.",
+         "ontologyMapping": "sample",
+         "crosstabMapping": "row",
+         "cardinality": "",
+         "factors": []
+        },
+        {
+         "kind": "MetaFactor",
+         "name": "Columns",
+         "type": "",
+         "description": "Factor(s) to stratify per column.",
+         "ontologyMapping": "variable",
+         "crosstabMapping": "column",
+         "cardinality": "",
+         "factors": []
+        }
+       ],
+       "axis": [
+        {
+         "kind": "AxisSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Y Axis",
+           "type": "numeric",
+           "description": "Factor to use for the graph's Y axis.",
+           "ontologyMapping": "y-axis",
+           "crosstabMapping": "y",
+           "cardinality": "1",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "X Axis",
+           "type": "",
+           "description": "Factor to use for the graph's X axis.",
+           "ontologyMapping": "x-axis",
+           "crosstabMapping": "x",
+           "cardinality": "1",
+           "factors": []
+          }
+         ]
+        }
+       ]
+      }
+     ],
      "outputSpecs": []
     }
    },
