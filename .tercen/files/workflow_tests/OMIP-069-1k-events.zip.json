@@ -1,0 +1,42 @@
+{
+ "kind": "FileDocument",
+ "id": "workflow_tests/OMIP-069-1k-events.zip",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "OMIP-069-1k-events.zip",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "11",
+ "dataUri": "lfs/8b/da/45fe2a17b5347593d98281598a5ff639a11615165c239b28ea2a470bc589",
+ "metadata": {
+  "kind": "FileMetadata",
+  "contentType": "",
+  "cacheControl": "",
+  "contentEncoding": "",
+  "contentLanguage": "",
+  "md5Hash": ""
+ },
+ "size": 3239184
+}

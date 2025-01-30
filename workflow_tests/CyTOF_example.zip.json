@@ -1,6 +1,6 @@
 {
  "kind": "TableSchema",
- "id": "11",
+ "id": "12",
  "isDeleted": false,
  "rev": "",
  "description": "",
@@ -28,7 +28,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "8",
+ "folderId": "11",
  "nRows": 0,
  "columns": [],
  "dataDirectory": "",
@@ -60,5 +60,6 @@
    "id": "520cc395c2b3041045fffcc892eb699c646c68512a1c2d4db28a687a3a763d0c",
    "index": 0
   }
- }
+ },
+ "size": 0
 }

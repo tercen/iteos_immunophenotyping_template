@@ -73,6 +73,7 @@
   "kind": "Relation",
   "id": "4c9ee31c-05fe-43b4-b21b-32eb2f8e5a62"
  },
+ "size": 34248,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -231,7 +232,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -241,7 +243,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -251,7 +254,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -261,7 +265,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       }
      ],
      "meta": [],
@@ -276,7 +281,7 @@
     "kind": "OperatorRef",
     "name": "PhenoGraph",
     "version": "2.0.2",
-    "operatorId": "3",
+    "operatorId": "4",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

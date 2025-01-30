@@ -103,6 +103,7 @@
   "kind": "Relation",
   "id": "5617da25-da32-47ce-a0fa-97fbddb20294"
  },
+ "size": 1278568,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -177,7 +178,7 @@
     "kind": "OperatorRef",
     "name": "Export Report",
     "version": "0.2.4",
-    "operatorId": "2",
+    "operatorId": "7",
     "operatorKind": "DockerOperator",
     "propertyValues": [
      {

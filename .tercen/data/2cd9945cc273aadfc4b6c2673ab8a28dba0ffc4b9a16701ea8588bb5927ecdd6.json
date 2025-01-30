@@ -118,6 +118,7 @@
   "kind": "Relation",
   "id": "f6e4c5ea-3a98-4f78-b0d4-d5e0e9644cec"
  },
+ "size": 80336,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -279,7 +280,7 @@
     "kind": "OperatorRef",
     "name": "Plot",
     "version": "0.3.5",
-    "operatorId": "13",
+    "operatorId": "8",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

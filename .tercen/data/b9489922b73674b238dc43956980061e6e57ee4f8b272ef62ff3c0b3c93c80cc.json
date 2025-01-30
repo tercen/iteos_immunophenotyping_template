@@ -73,6 +73,7 @@
   "kind": "Relation",
   "id": "cce500af-755c-40b1-a976-6ab23b8ac37d"
  },
+ "size": 336,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -231,7 +232,7 @@
     "kind": "OperatorRef",
     "name": "Heatmap Clustering",
     "version": "1.1.6",
-    "operatorId": "1",
+    "operatorId": "0",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

@@ -118,6 +118,7 @@
   "kind": "Relation",
   "id": "17e42377-f358-4512-a874-2672ee99769d"
  },
+ "size": 83736,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -518,7 +519,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -528,7 +530,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -538,7 +541,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -548,7 +552,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       }
      ],
      "meta": [],
@@ -563,7 +568,7 @@
     "kind": "OperatorRef",
     "name": "Plot",
     "version": "0.3.5",
-    "operatorId": "13",
+    "operatorId": "8",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

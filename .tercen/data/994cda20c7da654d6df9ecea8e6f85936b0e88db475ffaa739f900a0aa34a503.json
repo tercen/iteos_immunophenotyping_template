@@ -88,6 +88,7 @@
   "kind": "Relation",
   "id": "c775457a-6177-4a23-9039-a47fc6e1d81f"
  },
+ "size": 536,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -381,7 +382,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -391,7 +393,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -401,7 +404,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -411,7 +415,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       }
      ],
      "meta": [],
@@ -426,7 +431,7 @@
     "kind": "OperatorRef",
     "name": "Mean",
     "version": "1.3.2",
-    "operatorId": "4",
+    "operatorId": "3",
     "operatorKind": "ROperator",
     "propertyValues": [],
     "url": {

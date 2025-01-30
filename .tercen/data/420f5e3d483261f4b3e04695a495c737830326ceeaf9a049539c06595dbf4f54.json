@@ -118,6 +118,7 @@
   "kind": "Relation",
   "id": "b6e142db-e160-4ec7-be10-a46393670c2e"
  },
+ "size": 3665768,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -628,7 +629,8 @@
         "kind": "Factor",
         "name": "logicle..channel_description",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       }
      ],
      "meta": [],
@@ -643,7 +645,7 @@
     "kind": "OperatorRef",
     "name": "Plot",
     "version": "0.3.5",
-    "operatorId": "13",
+    "operatorId": "8",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

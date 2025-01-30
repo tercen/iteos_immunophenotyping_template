@@ -88,6 +88,7 @@
   "kind": "Relation",
   "id": "26c26b5a-c316-4fce-bf62-f222d3086e11"
  },
+ "size": 3115232,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -434,7 +435,7 @@
     "kind": "OperatorRef",
     "name": "Logicle",
     "version": "1.0.2",
-    "operatorId": "0",
+    "operatorId": "1",
     "operatorKind": "ROperator",
     "propertyValues": [],
     "url": {

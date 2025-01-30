@@ -133,6 +133,7 @@
   "kind": "Relation",
   "id": "d308130c-d35a-43e2-bf1e-cdea171e1268"
  },
+ "size": 1680,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -809,7 +810,8 @@
         "kind": "Factor",
         "name": "annot.channel_id",
         "type": "int32"
-       }
+       },
+       "preProcessors": []
       }
      ],
      "meta": [],
@@ -824,7 +826,7 @@
     "kind": "OperatorRef",
     "name": "Count and Proportion",
     "version": "0.1.4",
-    "operatorId": "6",
+    "operatorId": "5",
     "operatorKind": "ROperator",
     "propertyValues": [],
     "url": {

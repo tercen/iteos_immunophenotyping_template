@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "15",
+ "id": "13",
  "isDeleted": false,
  "rev": "",
  "description": "Preprocess FCS files and perform automated immunophenotyping using PhenoGraph and UMAP.",
@@ -624,7 +624,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "0",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -952,7 +952,8 @@
           "kind": "Factor",
           "name": "logicle..channel_description",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -967,7 +968,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1604,7 +1605,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -1614,7 +1616,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -1624,7 +1627,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -1634,7 +1638,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -1649,7 +1654,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "3",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1970,7 +1975,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -1980,7 +1986,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -1990,7 +1997,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2000,7 +2008,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -2015,7 +2024,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "7",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2429,7 +2438,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2439,7 +2449,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2449,7 +2460,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2459,7 +2471,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -2758,7 +2771,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2768,7 +2782,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2778,7 +2793,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2788,7 +2804,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -2803,7 +2820,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "4",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3112,7 +3129,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3122,7 +3140,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3132,7 +3151,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3142,7 +3162,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -3157,7 +3178,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -3818,7 +3839,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "5",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -4136,7 +4157,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "1",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -4561,7 +4582,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -4571,7 +4593,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -4581,7 +4604,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -4591,7 +4615,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -4606,7 +4631,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5097,7 +5122,8 @@
           "kind": "Factor",
           "name": "enrich.p_value",
           "type": "double"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -5463,7 +5489,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -6042,7 +6068,8 @@
           "kind": "Factor",
           "name": "annot.channel_id",
           "type": "int32"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -6057,7 +6084,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "6",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -6400,7 +6427,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -7133,7 +7160,7 @@
       "kind": "OperatorRef",
       "name": "Export Report",
       "version": "0.2.4",
-      "operatorId": "2",
+      "operatorId": "7",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {

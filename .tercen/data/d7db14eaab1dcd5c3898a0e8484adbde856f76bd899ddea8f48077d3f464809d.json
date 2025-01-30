@@ -88,6 +88,7 @@
   "kind": "Relation",
   "id": "cb9189a1-baa9-40b4-882d-0847be9fc767"
  },
+ "size": 95976,
  "query": {
   "kind": "CubeQuery",
   "relation": {
@@ -246,7 +247,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -256,7 +258,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -266,7 +269,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       },
       {
        "kind": "FilterExpr",
@@ -276,7 +280,8 @@
         "kind": "Factor",
         "name": "logicle..variable",
         "type": "string"
-       }
+       },
+       "preProcessors": []
       }
      ],
      "meta": [],
@@ -291,7 +296,7 @@
     "kind": "OperatorRef",
     "name": "UMAP",
     "version": "1.2.5",
-    "operatorId": "7",
+    "operatorId": "6",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

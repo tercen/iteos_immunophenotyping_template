@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "12",
+ "id": "14",
  "isDeleted": false,
  "rev": "",
  "description": "Gold standard",
@@ -32,7 +32,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "8",
+ "folderId": "11",
  "links": [
   {
    "kind": "Link",
@@ -282,7 +282,7 @@
      "id": "rename_e3fcb9e9cce5bf8280a0a625883f25fc",
      "relation": {
       "kind": "ReferenceRelation",
-      "id": "11",
+      "id": "12",
       "relation": {
        "kind": "CompositeRelation",
        "id": "eac487f5-8a64-4c4e-adee-da8d09e7f147",
@@ -970,7 +970,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8933f9d",
+    "taskId": "3975d8c1841834c72c27778be31c1dc7",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1129,7 +1129,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "0",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1378,7 +1378,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8985989",
+    "taskId": "3975d8c1841834c72c27778be31c1f7d",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1565,7 +1565,8 @@
           "kind": "Factor",
           "name": "logicle..channel_description",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -1580,7 +1581,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2097,7 +2098,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8934626",
+    "taskId": "3975d8c1841834c72c27778be31c29bf",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2261,7 +2262,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2271,7 +2273,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2281,7 +2284,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2291,7 +2295,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -2306,7 +2311,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "3",
+      "operatorId": "4",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2535,7 +2540,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8934bfa",
+    "taskId": "3975d8c1841834c72c27778be31c3856",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2699,7 +2704,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2709,7 +2715,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2719,7 +2726,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -2729,7 +2737,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -2744,7 +2753,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "7",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -3062,7 +3071,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8934ffa",
+    "taskId": "3975d8c1841834c72c27778be31c3c82",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3232,7 +3241,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3242,7 +3252,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3252,7 +3263,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3262,7 +3274,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -3397,7 +3410,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8935fed",
+    "taskId": "3975d8c1841834c72c27778be31c409d",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3561,7 +3574,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3571,7 +3585,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3581,7 +3596,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3591,7 +3607,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -3606,7 +3623,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "4",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3800,7 +3817,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c89a68a9",
+    "taskId": "3975d8c1841834c72c27778be31c476e",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3989,7 +4006,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -3999,7 +4017,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -4009,7 +4028,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -4019,7 +4039,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -4034,7 +4055,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -4556,7 +4577,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c89375fe",
+    "taskId": "3975d8c1841834c72c27778be31c47fc",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4715,7 +4736,7 @@
       "kind": "OperatorRef",
       "name": "Marker Enrichment Score",
       "version": "0.1.3",
-      "operatorId": "5",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -4968,7 +4989,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c89381d8",
+    "taskId": "3975d8c1841834c72c27778be31c4828",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5145,7 +5166,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "1",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5429,7 +5450,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c89b741d",
+    "taskId": "3975d8c1841834c72c27778be31c575d",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5708,7 +5729,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -5718,7 +5740,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -5728,7 +5751,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         },
         {
          "kind": "FilterExpr",
@@ -5738,7 +5762,8 @@
           "kind": "Factor",
           "name": "logicle..variable",
           "type": "string"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -5753,7 +5778,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -6077,7 +6102,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c89e35f6",
+    "taskId": "3975d8c1841834c72c27778be31c6557",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6264,7 +6289,8 @@
           "kind": "Factor",
           "name": "enrich.p_value",
           "type": "double"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -6421,7 +6447,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8a098e1",
+    "taskId": "3975d8c1841834c72c27778be31c741f",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6630,7 +6656,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -7065,7 +7091,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8939e19",
+    "taskId": "3975d8c1841834c72c27778be31c7c5f",
     "taskState": {
      "kind": "DoneState"
     }
@@ -7229,7 +7255,8 @@
           "kind": "Factor",
           "name": "annot.channel_id",
           "type": "int32"
-         }
+         },
+         "preProcessors": []
         }
        ],
        "meta": [],
@@ -7244,7 +7271,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "6",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -7520,7 +7547,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c89f2e21",
+    "taskId": "3975d8c1841834c72c27778be31c8926",
     "taskState": {
      "kind": "DoneState"
     }
@@ -7695,7 +7722,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.5",
-      "operatorId": "13",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -8326,7 +8353,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "216029dca7532ceab98eb302c8a37b00",
+    "taskId": "3975d8c1841834c72c27778be31c8b03",
     "taskState": {
      "kind": "DoneState"
     }
@@ -8485,7 +8512,7 @@
       "kind": "OperatorRef",
       "name": "Export Report",
       "version": "0.2.4",
-      "operatorId": "2",
+      "operatorId": "7",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {

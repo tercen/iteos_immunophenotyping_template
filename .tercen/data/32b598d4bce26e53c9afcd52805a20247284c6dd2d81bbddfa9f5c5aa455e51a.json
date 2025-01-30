@@ -63,6 +63,7 @@
   "kind": "Relation",
   "id": "b015d8e7-cd5f-4f37-8bd2-324505e4d9e4"
  },
+ "size": 1632,
  "queryHash": "e3fcb9e9cce5bf8280a0a62588597bfc",
  "queryTableType": "column",
  "query": {
