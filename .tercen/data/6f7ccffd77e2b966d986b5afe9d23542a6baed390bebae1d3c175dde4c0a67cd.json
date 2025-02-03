@@ -1,0 +1,84 @@
+{
+ "kind": "TableSchema",
+ "id": "6f7ccffd77e2b966d986b5afe9d23542a6baed390bebae1d3c175dde4c0a67cd",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "OMIP-069 - Sample Annotation.txt",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [
+  "flow cytometry"
+ ],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "6f7ccffd77e2b966d986b5afe9d23542a6baed390bebae1d3c175dde4c0a67cd"
+  },
+  {
+   "kind": "Pair",
+   "key": "PUBLISHED",
+   "value": "true"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "16",
+ "nRows": 4,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "e959487c-bcd3-418b-a199-3b0576a76fae",
+   "name": "filename",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "d288ae8a-6539-4252-b635-41e14483fefd",
+   "name": "Condition",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/6f/7c/6f7ccffd77e2b966d986b5afe9d23542a6baed390bebae1d3c175dde4c0a67cd",
+ "relation": {
+  "kind": "Relation",
+  "id": "d04ba2ea-a676-46c8-bb7a-388880e70704"
+ },
+ "size": 392
+}

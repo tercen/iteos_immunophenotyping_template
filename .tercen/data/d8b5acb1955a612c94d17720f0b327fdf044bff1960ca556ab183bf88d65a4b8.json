@@ -1,0 +1,134 @@
+{
+ "kind": "CubeQueryTableSchema",
+ "id": "d8b5acb1955a612c94d17720f0b327fdf044bff1960ca556ab183bf88d65a4b8",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "row",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "channel_description.size_in_bytes",
+   "value": "864"
+  },
+  {
+   "kind": "Pair",
+   "key": "channel_name.size_in_bytes",
+   "value": "856"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "d8b5acb1955a612c94d17720f0b327fdf044bff1960ca556ab183bf88d65a4b8"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 40,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "257b15a6-ded1-45ec-b7e1-0edaaaf30e18",
+   "name": "channel_name",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "95a0bbf4-1f1b-44c4-8afd-1bcacf39faf1",
+   "name": "channel_description",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/d8/b5/d8b5acb1955a612c94d17720f0b327fdf044bff1960ca556ab183bf88d65a4b8",
+ "relation": {
+  "kind": "Relation",
+  "id": "40ec5c40-ba21-4f49-8179-73e0e85e9cfd"
+ },
+ "size": 19664,
+ "queryHash": "6e83b855c3350e129a36df256d156c09",
+ "queryTableType": "row",
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "Relation",
+   "id": "fec76d30-30e4-4f79-869c-06fa3d3fffd1"
+  },
+  "colColumns": [],
+  "rowColumns": [],
+  "axisQueries": [],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "",
+    "version": "",
+    "operatorId": "",
+    "operatorKind": "",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": ""
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}
