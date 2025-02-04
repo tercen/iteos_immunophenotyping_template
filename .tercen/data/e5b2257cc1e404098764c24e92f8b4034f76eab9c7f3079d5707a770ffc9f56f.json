@@ -1,10 +1,10 @@
 {
  "kind": "ComputedTableSchema",
- "id": "fa56c9745211201b05aed70a7fd8c1180b2f00a6c99279d84b10712ce0ab86a6",
+ "id": "e5b2257cc1e404098764c24e92f8b4034f76eab9c7f3079d5707a770ffc9f56f",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "1e04ffc0-ed1b-42ab-851a-3700512fd568",
+ "name": "0b0d4038-2b83-496e-946a-1f1cf0db3407",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -24,7 +24,7 @@
   {
    "kind": "Pair",
    "key": "SHA256",
-   "value": "fa56c9745211201b05aed70a7fd8c1180b2f00a6c99279d84b10712ce0ab86a6"
+   "value": "e5b2257cc1e404098764c24e92f8b4034f76eab9c7f3079d5707a770ffc9f56f"
   }
  ],
  "url": {
@@ -35,11 +35,11 @@
  "isPublic": false,
  "projectId": "",
  "folderId": "",
- "nRows": 1,
+ "nRows": 2,
  "columns": [
   {
    "kind": "ColumnSchema",
-   "id": "644b7ed5-88fa-445f-93a5-33eeaef88354",
+   "id": "41165788-7acf-4e93-8dd0-b0f1991fac70",
    "name": "markers.filename",
    "type": "string",
    "nRows": 0,
@@ -54,7 +54,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "18322577-0beb-455d-9ba9-279a9613bd2e",
+   "id": "49d65502-e02f-40fb-adf2-a42ca19377b7",
    "name": "markers.mimetype",
    "type": "string",
    "nRows": 0,
@@ -69,7 +69,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "6b1e4e5c-3d99-4dc9-a985-88c443baaa50",
+   "id": "6e6a5841-3d31-4796-8a55-44ec76e21c85",
    "name": ".content",
    "type": "string",
    "nRows": 0,
@@ -83,17 +83,17 @@
    }
   }
  ],
- "dataDirectory": "data/fa/56/fa56c9745211201b05aed70a7fd8c1180b2f00a6c99279d84b10712ce0ab86a6",
+ "dataDirectory": "data/e5/b2/e5b2257cc1e404098764c24e92f8b4034f76eab9c7f3079d5707a770ffc9f56f",
  "relation": {
   "kind": "Relation",
-  "id": "c269bf58-07f8-4a02-80c1-69a6daccc4e9"
+  "id": "7edfb413-c2fe-4e65-bf19-9508cb123b85"
  },
- "size": 15344,
+ "size": 7672,
  "query": {
   "kind": "CubeQuery",
   "relation": {
    "kind": "CompositeRelation",
-   "id": "b1bc81e3-e2f6-41fd-a830-8944706a4567",
+   "id": "12e62730-a74a-4a12-b728-6626437b6940",
    "joinOperators": [
     {
      "kind": "JoinOperator",
@@ -109,7 +109,7 @@
      },
      "rightRelation": {
       "kind": "RenameRelation",
-      "id": "238ad702-a0b5-4fb1-8b5c-32e4fd461f38",
+      "id": "74670cfc-817b-4cb8-8339-9c0217340c7c",
       "relation": {
        "kind": "SimpleRelation",
        "id": "47210717b8a7b3912a25f030d94927f1d97ac90b4006545395931f90ac89f1ae",
@@ -132,7 +132,7 @@
    ],
    "mainRelation": {
     "kind": "CompositeRelation",
-    "id": "0923fca6-2239-4634-9a90-ad0c9b658342",
+    "id": "229f5522-8c5e-4a49-a0cd-8dc655fad027",
     "joinOperators": [
      {
       "kind": "JoinOperator",
@@ -152,10 +152,10 @@
       },
       "rightRelation": {
        "kind": "RenameRelation",
-       "id": "cc6f5cb6-ef06-48a1-9dc7-e4c86d45ae64",
+       "id": "894982b2-69e3-4919-bf01-faf83f72c8ac",
        "relation": {
         "kind": "CompositeRelation",
-        "id": "64fd7739-d1cc-4172-acc7-403d6a29dc77",
+        "id": "66a05476-3e5c-42b8-9055-0a588815a11c",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -178,7 +178,7 @@
         ],
         "mainRelation": {
          "kind": "CompositeRelation",
-         "id": "1aa5a1ac-f192-492c-8c0b-2f5eb2aa9b2d",
+         "id": "22a3ba2a-0696-4b78-a1b2-8a793505f909",
          "joinOperators": [
           {
            "kind": "JoinOperator",
@@ -249,7 +249,7 @@
     ],
     "mainRelation": {
      "kind": "CompositeRelation",
-     "id": "1fb30577-eba4-4a33-895c-04aa55102d47",
+     "id": "779c916a-bf37-4ca9-ab59-a629683d783e",
      "joinOperators": [
       {
        "kind": "JoinOperator",
@@ -265,10 +265,10 @@
        },
        "rightRelation": {
         "kind": "RenameRelation",
-        "id": "de009df8-74ad-49fa-8307-452da4c4aa93",
+        "id": "5d6d6b00-6b81-4002-930b-c63abff486fa",
         "relation": {
          "kind": "CompositeRelation",
-         "id": "d5ffe3d4-4ed3-4fb0-8c41-c421bbdd243f",
+         "id": "f95d6c6d-905a-49b9-8264-7e746a570613",
          "joinOperators": [
           {
            "kind": "JoinOperator",
@@ -320,10 +320,10 @@
      ],
      "mainRelation": {
       "kind": "RenameRelation",
-      "id": "ec1b5028-9195-4424-bcec-a6ca4c2e970f",
+      "id": "5b567013-e14c-4e45-b417-cd4459af962c",
       "relation": {
        "kind": "CompositeRelation",
-       "id": "4d388bca-5a6b-4ee9-95cd-439d3465121b",
+       "id": "300db6e9-7415-4e8c-a566-eb93a90eda2a",
        "joinOperators": [
         {
          "kind": "JoinOperator",
@@ -346,7 +346,7 @@
        ],
        "mainRelation": {
         "kind": "CompositeRelation",
-        "id": "fad6cac1-5534-455d-8881-e2dd0ab279c9",
+        "id": "00bfeece-149c-49c8-ab86-129a235d8302",
         "joinOperators": [
          {
           "kind": "JoinOperator",
@@ -509,8 +509,8 @@
    "operatorRef": {
     "kind": "OperatorRef",
     "name": "Add Table to Report",
-    "version": "0.0.1",
-    "operatorId": "18",
+    "version": "0.1.1",
+    "operatorId": "19",
     "operatorKind": "DockerOperator",
     "propertyValues": [
      {
