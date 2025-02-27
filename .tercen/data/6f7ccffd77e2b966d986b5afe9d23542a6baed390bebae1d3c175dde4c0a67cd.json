@@ -27,11 +27,6 @@
    "kind": "Pair",
    "key": "SHA256",
    "value": "6f7ccffd77e2b966d986b5afe9d23542a6baed390bebae1d3c175dde4c0a67cd"
-  },
-  {
-   "kind": "Pair",
-   "key": "PUBLISHED",
-   "value": "true"
   }
  ],
  "url": {

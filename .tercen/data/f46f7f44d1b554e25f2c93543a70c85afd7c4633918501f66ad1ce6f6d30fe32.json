@@ -1,0 +1,92 @@
+{
+ "kind": "TableSchema",
+ "id": "f46f7f44d1b554e25f2c93543a70c85afd7c4633918501f66ad1ce6f6d30fe32",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "Channel-Descriptions-OMIP-069 - FCS Files (1k Events).zip-02_27_25-09_38_45",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "f46f7f44d1b554e25f2c93543a70c85afd7c4633918501f66ad1ce6f6d30fe32"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "20",
+ "nRows": 47,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "548c571a-df48-4162-948f-7b0219609226",
+   "name": "channel_name",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "1ae17562-99df-4901-8c88-597158a5873f",
+   "name": "channel_description",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "97b6428e-f17f-4eec-8f77-0c31d26c3a1b",
+   "name": "channel_id",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/f4/6f/f46f7f44d1b554e25f2c93543a70c85afd7c4633918501f66ad1ce6f6d30fe32",
+ "relation": {
+  "kind": "Relation",
+  "id": "d4a76c34-17bf-4106-9959-d25b2c3d4550"
+ },
+ "size": 1988
+}
