@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "22",
+ "id": "21",
  "isDeleted": false,
  "rev": "",
  "description": "Preprocess FCS files and perform automated immunophenotyping using PhenoGraph and UMAP.",
@@ -6084,7 +6084,7 @@
       "kind": "OperatorRef",
       "name": "FCS",
       "version": "2.4.0",
-      "operatorId": "21",
+      "operatorId": "20",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
