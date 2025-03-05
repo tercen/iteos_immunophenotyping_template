@@ -1,0 +1,500 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "489ae0b437f65134bc816c3e58ec811603989fc4b859371fa9feec7b1ad1e736",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "736543d0-f9c3-11ef-8f68-9dc17147bbc7",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "489ae0b437f65134bc816c3e58ec811603989fc4b859371fa9feec7b1ad1e736"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 156000,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "a80a00a2-3db9-4ef0-b9b8-40322ce49ae8",
+   "name": ".ci",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "8c6c8db7-9643-426e-a9f5-0eab7428fe8c",
+   "name": ".ri",
+   "type": "int32",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "e53abca5-cc21-4994-bc16-47ac3173496c",
+   "name": "logicle.value",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/48/9a/489ae0b437f65134bc816c3e58ec811603989fc4b859371fa9feec7b1ad1e736",
+ "relation": {
+  "kind": "Relation",
+  "id": "5f3dac4c-53c0-4f30-ad3a-062cb119933a"
+ },
+ "size": 1697048,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "CompositeRelation",
+   "id": "d036b030-75ba-47d1-9318-0825c83775b5",
+   "joinOperators": [
+    {
+     "kind": "JoinOperator",
+     "joinType": "leftOuter",
+     "leftPair": {
+      "kind": "ColumnPair",
+      "lColumns": [
+       "event_id"
+      ],
+      "rColumns": [
+       "event_id"
+      ]
+     },
+     "rightRelation": {
+      "kind": "RenameRelation",
+      "id": "28658449-c66f-4c29-a6ec-854e78957121",
+      "relation": {
+       "kind": "CompositeRelation",
+       "id": "7816a3b8-7613-4340-914f-689b83f59a99",
+       "joinOperators": [
+        {
+         "kind": "JoinOperator",
+         "joinType": "leftOuter",
+         "leftPair": {
+          "kind": "ColumnPair",
+          "lColumns": [
+           ".ci"
+          ],
+          "rColumns": [
+           "ecdc30be3beed223a1011b6ae025d9ea019e59c9e1ea64e1c395aac3a9ee30f6._rids"
+          ]
+         },
+         "rightRelation": {
+          "kind": "SimpleRelation",
+          "id": "ecdc30be3beed223a1011b6ae025d9ea019e59c9e1ea64e1c395aac3a9ee30f6",
+          "index": 3
+         }
+        }
+       ],
+       "mainRelation": {
+        "kind": "SimpleRelation",
+        "id": "ae34430c60f7e23b13ede514d89a9575a2d435c839f8e1b6c0c1f463812281a5",
+        "index": 2
+       }
+      },
+      "inNames": [
+       ".ci",
+       "downsample.random_sequence",
+       "downsample.random_percentage",
+       "ae34430c60f7e23b13ede514d89a9575a2d435c839f8e1b6c0c1f463812281a5._rids",
+       "ae34430c60f7e23b13ede514d89a9575a2d435c839f8e1b6c0c1f463812281a5.tlbId",
+       "event_id",
+       "ecdc30be3beed223a1011b6ae025d9ea019e59c9e1ea64e1c395aac3a9ee30f6._rids",
+       "ecdc30be3beed223a1011b6ae025d9ea019e59c9e1ea64e1c395aac3a9ee30f6.tlbId",
+       "event_id"
+      ],
+      "outNames": [
+       ".ci",
+       "downsample.random_sequence",
+       "downsample.random_percentage",
+       "ae34430c60f7e23b13ede514d89a9575a2d435c839f8e1b6c0c1f463812281a5._rids",
+       "ae34430c60f7e23b13ede514d89a9575a2d435c839f8e1b6c0c1f463812281a5.tlbId",
+       "event_id",
+       "ecdc30be3beed223a1011b6ae025d9ea019e59c9e1ea64e1c395aac3a9ee30f6._rids",
+       "ecdc30be3beed223a1011b6ae025d9ea019e59c9e1ea64e1c395aac3a9ee30f6.tlbId",
+       "downsample..event_id"
+      ]
+     }
+    }
+   ],
+   "mainRelation": {
+    "kind": "CompositeRelation",
+    "id": "4e08fa7d-dba3-4556-bc4a-14630feb94f3",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "leftOuter",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        "channel_id"
+       ],
+       "rColumns": [
+        "channel_id"
+       ]
+      },
+      "rightRelation": {
+       "kind": "SimpleRelation",
+       "id": "beb5b2ed50a162aae7b326b476baffbed0bf7aa19a51b38aaf925f01e2cee08f",
+       "index": 1
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "SimpleRelation",
+     "id": "4683664101b4c2167d2bdb0a11eb18f8516ab101bbd621c9f8f767facc9fb4dd",
+     "index": 0
+    }
+   }
+  },
+  "colColumns": [
+   {
+    "kind": "Factor",
+    "name": "event_id",
+    "type": "double"
+   }
+  ],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "channel_name",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "channel_description",
+    "type": "string"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "value",
+     "type": "double"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": [
+    {
+     "kind": "NamedFilter",
+     "logical": "or",
+     "not": true,
+     "filterExprs": [
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": ".ci",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "SSC-A",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "SSC-B-A",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "SSC-B-H",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "SSC-H",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "Time",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "LIVE DEAD Blue-A",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "Width",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "Center",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "Height",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "Area",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "FSC-H",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      },
+      {
+       "kind": "FilterExpr",
+       "filterOp": "equals",
+       "stringValue": "FSC-A",
+       "factor": {
+        "kind": "Factor",
+        "name": "channel_name",
+        "type": "string"
+       },
+       "preProcessors": []
+      }
+     ],
+     "meta": [],
+     "name": "Exclude QC Channels"
+    },
+    {
+     "kind": "NamedFilter",
+     "logical": "and",
+     "not": false,
+     "filterExprs": [
+      {
+       "kind": "FilterExpr",
+       "filterOp": "lesseq",
+       "stringValue": "1000000000",
+       "factor": {
+        "kind": "Factor",
+        "name": "downsample.random_sequence",
+        "type": "double"
+       },
+       "preProcessors": []
+      }
+     ],
+     "meta": [],
+     "name": "Downsampling # Events"
+    },
+    {
+     "kind": "NamedFilter",
+     "logical": "and",
+     "not": false,
+     "filterExprs": [
+      {
+       "kind": "FilterExpr",
+       "filterOp": "lesseq",
+       "stringValue": "100",
+       "factor": {
+        "kind": "Factor",
+        "name": "downsample.random_percentage",
+        "type": "double"
+       },
+       "preProcessors": []
+      }
+     ],
+     "meta": [],
+     "name": "Downsampling Percentage"
+    }
+   ]
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "logicle",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Logicle",
+    "version": "1.0.2",
+    "operatorId": "5",
+    "operatorKind": "ROperator",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/logicle_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [
+    {
+     "kind": "Pair",
+     "key": "cpu",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "ram",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "cpu-shares",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "tercen.collect.stats",
+     "value": "false"
+    },
+    {
+     "kind": "Pair",
+     "key": "debug",
+     "value": "false"
+    }
+   ],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

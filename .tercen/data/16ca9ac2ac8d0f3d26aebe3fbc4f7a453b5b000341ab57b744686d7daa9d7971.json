@@ -1,0 +1,254 @@
+{
+ "kind": "ComputedTableSchema",
+ "id": "16ca9ac2ac8d0f3d26aebe3fbc4f7a453b5b000341ab57b744686d7daa9d7971",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "028b1720-f9c8-11ef-8f68-9dc17147bbc7",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "16ca9ac2ac8d0f3d26aebe3fbc4f7a453b5b000341ab57b744686d7daa9d7971"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 1,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "72de3a5b-3e05-4335-82dd-3663cae77c6d",
+   "name": "export_pdf.filename",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "1ce42bff-1cb3-4353-ba4d-502d1003ed79",
+   "name": "export_pdf.mimetype",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "393d828e-78ab-4dd9-aced-1ff31be7e16a",
+   "name": "export_pdf.checksum",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "376ff5a8-08de-4a99-868e-4df3b0854c79",
+   "name": ".content",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/16/ca/16ca9ac2ac8d0f3d26aebe3fbc4f7a453b5b000341ab57b744686d7daa9d7971",
+ "relation": {
+  "kind": "Relation",
+  "id": "5f8d34b2-5d24-473a-84d0-cba188e1ec01"
+ },
+ "size": 1706600,
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "CompositeRelation",
+   "id": "cc3f1327-e037-470f-8f78-cd747f8e9d67",
+   "joinOperators": [
+    {
+     "kind": "JoinOperator",
+     "joinType": "leftOuter",
+     "leftPair": {
+      "kind": "ColumnPair",
+      "lColumns": [],
+      "rColumns": []
+     },
+     "rightRelation": {
+      "kind": "SimpleRelation",
+      "id": "f56f0fd7410815be4176f937d308283c7be936b089c021255077517a1f939472",
+      "index": 1
+     }
+    }
+   ],
+   "mainRelation": {
+    "kind": "SimpleRelation",
+    "id": "75e669e4b38e470488cbd1e9b3b752d2b348041bde0d985f238e3fa8bc39a4be",
+    "index": 0
+   }
+  },
+  "colColumns": [],
+  "rowColumns": [
+   {
+    "kind": "Factor",
+    "name": "prop_cond.filename",
+    "type": "string"
+   },
+   {
+    "kind": "Factor",
+    "name": "umap_cond.filename",
+    "type": "string"
+   }
+  ],
+  "axisQueries": [
+   {
+    "kind": "CubeAxisQuery",
+    "pointSize": 4,
+    "chartType": "point",
+    "yAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "yAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "xAxis": {
+     "kind": "Factor",
+     "name": "",
+     "type": "string"
+    },
+    "xAxisSettings": {
+     "kind": "AxisSettings",
+     "meta": []
+    },
+    "errors": [],
+    "labels": [],
+    "colors": [],
+    "preprocessors": []
+   }
+  ],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "export_pdf",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "Export Report",
+    "version": "0.2.4",
+    "operatorId": "10",
+    "operatorKind": "DockerOperator",
+    "propertyValues": [
+     {
+      "kind": "PropertyValue",
+      "name": "OutputFormat",
+      "value": "PDF - Slides (*.pdf)"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "SVGOptimization",
+      "value": "Bitmap Auto"
+     },
+     {
+      "kind": "PropertyValue",
+      "name": "LabelPosition",
+      "value": "Right"
+     }
+    ],
+    "url": {
+     "kind": "Url",
+     "uri": "https://github.com/tercen/export_operator"
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [
+    {
+     "kind": "Pair",
+     "key": "cpu",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "ram",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "cpu-shares",
+     "value": "0"
+    },
+    {
+     "kind": "Pair",
+     "key": "tercen.collect.stats",
+     "value": "false"
+    },
+    {
+     "kind": "Pair",
+     "key": "debug",
+     "value": "false"
+    }
+   ],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}
