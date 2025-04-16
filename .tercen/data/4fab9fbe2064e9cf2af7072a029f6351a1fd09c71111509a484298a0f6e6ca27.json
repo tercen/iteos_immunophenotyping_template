@@ -242,7 +242,7 @@
     "kind": "OperatorRef",
     "name": "UMAP",
     "version": "1.2.5",
-    "operatorId": "6",
+    "operatorId": "2",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

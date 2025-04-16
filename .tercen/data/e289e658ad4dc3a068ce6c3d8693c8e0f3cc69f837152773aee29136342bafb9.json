@@ -279,12 +279,12 @@
              ".ci"
             ],
             "rColumns": [
-             "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids"
+             "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids"
             ]
            },
            "rightRelation": {
             "kind": "SimpleRelation",
-            "id": "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6",
+            "id": "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1",
             "index": 4
            }
           }
@@ -301,8 +301,8 @@
          "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826._rids",
          "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826.tlbId",
          "logicle..event_id",
-         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids",
-         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6.tlbId",
+         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids",
+         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1.tlbId",
          "logicle..event_id"
         ],
         "outNames": [
@@ -311,8 +311,8 @@
          "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826._rids",
          "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826.tlbId",
          "logicle..event_id",
-         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids",
-         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6.tlbId",
+         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids",
+         "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1.tlbId",
          "clust..event_id"
         ]
        }
@@ -505,7 +505,7 @@
     "kind": "OperatorRef",
     "name": "Add Table to Report",
     "version": "0.1.1",
-    "operatorId": "14",
+    "operatorId": "15",
     "operatorKind": "DockerOperator",
     "propertyValues": [
      {

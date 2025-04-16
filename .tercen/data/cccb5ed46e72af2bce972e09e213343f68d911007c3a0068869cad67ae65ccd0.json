@@ -269,7 +269,7 @@
     "kind": "OperatorRef",
     "name": "Median and MAD",
     "version": "0.0.3",
-    "operatorId": "15",
+    "operatorId": "11",
     "operatorKind": "ROperator",
     "propertyValues": [],
     "url": {

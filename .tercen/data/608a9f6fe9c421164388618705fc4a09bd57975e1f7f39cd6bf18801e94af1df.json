@@ -240,7 +240,7 @@
     "kind": "OperatorRef",
     "name": "Histogram",
     "version": "0.2.0",
-    "operatorId": "13",
+    "operatorId": "12",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

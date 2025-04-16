@@ -447,7 +447,7 @@
     "kind": "OperatorRef",
     "name": "Logicle",
     "version": "1.0.2",
-    "operatorId": "5",
+    "operatorId": "0",
     "operatorKind": "ROperator",
     "propertyValues": [],
     "url": {

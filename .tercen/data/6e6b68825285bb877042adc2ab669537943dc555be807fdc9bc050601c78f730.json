@@ -242,7 +242,7 @@
     "kind": "OperatorRef",
     "name": "Scale (Z-Score)",
     "version": "0.12.2",
-    "operatorId": "9",
+    "operatorId": "8",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

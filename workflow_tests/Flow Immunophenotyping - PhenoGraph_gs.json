@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "19",
+ "id": "20",
  "isDeleted": false,
  "rev": "",
  "description": "Preprocess FCS files and perform automated immunophenotyping using PhenoGraph and UMAP.",
@@ -33,7 +33,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "16",
+ "folderId": "17",
  "links": [
   {
    "kind": "Link",
@@ -433,7 +433,7 @@
      "id": "rename_e813f968-8185-4922-8c62-dd9e47d0cc06",
      "relation": {
       "kind": "InMemoryRelation",
-      "id": "e0ac9f1d-3f9f-4187-ac04-6a681076fc8b",
+      "id": "c767ce37-bd0c-4eee-992e-c180e3cd4df6",
       "inMemoryTable": {
        "kind": "Table",
        "nRows": 1,
@@ -622,7 +622,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "da5df11d174613a1f9aa835d7bdab1b4",
+    "taskId": "d26470ba930a96624c14b76a6f573a0f",
     "taskState": {
      "kind": "DoneState"
     }
@@ -974,7 +974,7 @@
       "kind": "OperatorRef",
       "name": "Logicle",
       "version": "1.0.2",
-      "operatorId": "5",
+      "operatorId": "0",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -1223,7 +1223,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "da5df11d174613a1f9aa835d7bdd04fd",
+    "taskId": "d26470ba930a96624c14b76a6f574678",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1393,7 +1393,7 @@
       "kind": "OperatorRef",
       "name": "Histogram",
       "version": "0.2.0",
-      "operatorId": "13",
+      "operatorId": "12",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -1771,7 +1771,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f50bcdc2",
+    "taskId": "d26470ba930a96624c14b76a6f5752fb",
     "taskState": {
      "kind": "DoneState"
     }
@@ -1930,7 +1930,7 @@
       "kind": "OperatorRef",
       "name": "PhenoGraph",
       "version": "2.0.2",
-      "operatorId": "0",
+      "operatorId": "1",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2077,12 +2077,12 @@
             ".ci"
            ],
            "rColumns": [
-            "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids"
+            "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6",
+           "id": "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1",
            "index": 0
           }
          }
@@ -2099,8 +2099,8 @@
         "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826._rids",
         "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826.tlbId",
         "logicle..event_id",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6.tlbId",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1.tlbId",
         "logicle..event_id"
        ],
        "outNames": [
@@ -2109,8 +2109,8 @@
         "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826._rids",
         "a101cab902040af6758e1393983a1f44d993abfb97b7163517c158e4aa9b6826.tlbId",
         "logicle..event_id",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6.tlbId",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1.tlbId",
         "clust..event_id"
        ]
       }
@@ -2159,7 +2159,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f50c57d9",
+    "taskId": "d26470ba930a96624c14b76a6f575d7b",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2318,7 +2318,7 @@
       "kind": "OperatorRef",
       "name": "UMAP",
       "version": "1.2.5",
-      "operatorId": "6",
+      "operatorId": "2",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -2490,12 +2490,12 @@
             ".ci"
            ],
            "rColumns": [
-            "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids"
+            "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids"
            ]
           },
           "rightRelation": {
            "kind": "SimpleRelation",
-           "id": "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1",
+           "id": "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6",
            "index": 0
           }
          }
@@ -2513,8 +2513,8 @@
         "4fab9fbe2064e9cf2af7072a029f6351a1fd09c71111509a484298a0f6e6ca27._rids",
         "4fab9fbe2064e9cf2af7072a029f6351a1fd09c71111509a484298a0f6e6ca27.tlbId",
         "logicle..event_id",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1.tlbId",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6.tlbId",
         "logicle..event_id"
        ],
        "outNames": [
@@ -2524,8 +2524,8 @@
         "4fab9fbe2064e9cf2af7072a029f6351a1fd09c71111509a484298a0f6e6ca27._rids",
         "4fab9fbe2064e9cf2af7072a029f6351a1fd09c71111509a484298a0f6e6ca27.tlbId",
         "logicle..event_id",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1._rids",
-        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6-1.tlbId",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6._rids",
+        "2e8874d11ed15b9be6296a711a7359b955817939cb36246a8ea198d6c46328b6.tlbId",
         "umap..event_id"
        ]
       }
@@ -2622,7 +2622,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f50c6651",
+    "taskId": "d26470ba930a96624c14b76a6f576974",
     "taskState": {
      "kind": "DoneState"
     }
@@ -2787,7 +2787,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -3111,7 +3111,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f50d77e5",
+    "taskId": "d26470ba930a96624c14b76a6f5776ae",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3270,7 +3270,7 @@
       "kind": "OperatorRef",
       "name": "Mean",
       "version": "1.3.2",
-      "operatorId": "2",
+      "operatorId": "3",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -3464,7 +3464,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f5120790",
+    "taskId": "d26470ba930a96624c14b76a6f577d1d",
     "taskState": {
      "kind": "DoneState"
     }
@@ -3648,7 +3648,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -4134,7 +4134,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f5124c63",
+    "taskId": "d26470ba930a96624c14b76a6f577d40",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4546,7 +4546,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f512a90a",
+    "taskId": "d26470ba930a96624c14b76a6f5789de",
     "taskState": {
      "kind": "DoneState"
     }
@@ -4723,7 +4723,7 @@
       "kind": "OperatorRef",
       "name": "Heatmap Clustering",
       "version": "1.1.6",
-      "operatorId": "7",
+      "operatorId": "5",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5055,7 +5055,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f513dbec",
+    "taskId": "d26470ba930a96624c14b76a6f578b81",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5264,7 +5264,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -5699,7 +5699,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f521318a",
+    "taskId": "d26470ba930a96624c14b76a6f578f9b",
     "taskState": {
      "kind": "DoneState"
     }
@@ -5858,7 +5858,7 @@
       "kind": "OperatorRef",
       "name": "Count and Proportion",
       "version": "0.1.4",
-      "operatorId": "3",
+      "operatorId": "6",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -6161,7 +6161,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f5214b95",
+    "taskId": "d26470ba930a96624c14b76a6f579c4b",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6336,7 +6336,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -6768,7 +6768,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "f22bc911c3fb8a63f6f4959b6505805f",
+    "taskId": "d26470ba930a96624c14b76a6f57a97b",
     "taskState": {
      "kind": "DoneState"
     }
@@ -6941,7 +6941,7 @@
       "kind": "OperatorRef",
       "name": "FCS",
       "version": "2.4.0",
-      "operatorId": "20",
+      "operatorId": "14",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -7146,7 +7146,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f51d4a8d",
+    "taskId": "d26470ba930a96624c14b76a6f57b117",
     "taskState": {
      "kind": "DoneState"
     }
@@ -7316,7 +7316,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -7645,7 +7645,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "da5df11d174613a1f9aa835d7bdeebfb",
+    "taskId": "d26470ba930a96624c14b76a6f57b473",
     "taskState": {
      "kind": "DoneState"
     }
@@ -7804,7 +7804,7 @@
       "kind": "OperatorRef",
       "name": "Scale (Z-Score)",
       "version": "0.12.2",
-      "operatorId": "9",
+      "operatorId": "8",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -8064,7 +8064,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "da5df11d174613a1f9aa835d7be057d0",
+    "taskId": "d26470ba930a96624c14b76a6f57c23e",
     "taskState": {
      "kind": "DoneState"
     }
@@ -8234,7 +8234,7 @@
       "kind": "OperatorRef",
       "name": "Histogram",
       "version": "0.2.0",
-      "operatorId": "13",
+      "operatorId": "12",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -8443,7 +8443,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f51da93a",
+    "taskId": "d26470ba930a96624c14b76a6f57ced3",
     "taskState": {
      "kind": "DoneState"
     }
@@ -8613,7 +8613,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -8978,7 +8978,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f50f00a4",
+    "taskId": "d26470ba930a96624c14b76a6f57cf3a",
     "taskState": {
      "kind": "DoneState"
     }
@@ -9252,7 +9252,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -9617,7 +9617,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f51c7700",
+    "taskId": "d26470ba930a96624c14b76a6f57d90a",
     "taskState": {
      "kind": "DoneState"
     }
@@ -9814,7 +9814,7 @@
       "kind": "OperatorRef",
       "name": "Add Table to Report",
       "version": "0.1.1",
-      "operatorId": "14",
+      "operatorId": "15",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -10024,7 +10024,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f521f18e",
+    "taskId": "d26470ba930a96624c14b76a6f57e0fa",
     "taskState": {
      "kind": "DoneState"
     }
@@ -10193,7 +10193,7 @@
       "kind": "OperatorRef",
       "name": "Median and MAD",
       "version": "0.0.3",
-      "operatorId": "15",
+      "operatorId": "11",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -10417,7 +10417,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f5226021",
+    "taskId": "d26470ba930a96624c14b76a6f57e391",
     "taskState": {
      "kind": "DoneState"
     }
@@ -10598,7 +10598,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -10958,7 +10958,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f522f8e5",
+    "taskId": "d26470ba930a96624c14b76a6f57e794",
     "taskState": {
      "kind": "DoneState"
     }
@@ -11134,7 +11134,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -11494,7 +11494,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "f22bc911c3fb8a63f6f4959b6507fbab",
+    "taskId": "d26470ba930a96624c14b76a6f57f641",
     "taskState": {
      "kind": "DoneState"
     }
@@ -11653,7 +11653,7 @@
       "kind": "OperatorRef",
       "name": "Add Table to Report",
       "version": "0.1.1",
-      "operatorId": "12",
+      "operatorId": "15",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -11794,7 +11794,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "da5df11d174613a1f9aa835d7b50b430",
+    "taskId": "d26470ba930a96624c14b76a6f580005",
     "taskState": {
      "kind": "DoneState"
     }
@@ -11959,7 +11959,7 @@
       "kind": "OperatorRef",
       "name": "Downsample",
       "version": "3.0.0",
-      "operatorId": "8",
+      "operatorId": "9",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -12133,7 +12133,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "da5df11d174613a1f9aa835d7be1c3aa",
+    "taskId": "d26470ba930a96624c14b76a6f58029a",
     "taskState": {
      "kind": "DoneState"
     }
@@ -12485,7 +12485,7 @@
       "kind": "OperatorRef",
       "name": "Count",
       "version": "1.0.2",
-      "operatorId": "1",
+      "operatorId": "7",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {
@@ -12734,7 +12734,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "da5df11d174613a1f9aa835d7be200fb",
+    "taskId": "d26470ba930a96624c14b76a6f580f2a",
     "taskState": {
      "kind": "DoneState"
     }
@@ -13086,7 +13086,7 @@
       "kind": "OperatorRef",
       "name": "Add Table to Report",
       "version": "0.1.1",
-      "operatorId": "12",
+      "operatorId": "15",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -13615,7 +13615,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f5107be9",
+    "taskId": "d26470ba930a96624c14b76a6f581b24",
     "taskState": {
      "kind": "DoneState"
     }
@@ -13889,7 +13889,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -14254,7 +14254,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f51ce518",
+    "taskId": "d26470ba930a96624c14b76a6f581f23",
     "taskState": {
      "kind": "DoneState"
     }
@@ -14423,7 +14423,7 @@
       "kind": "OperatorRef",
       "name": "Plot",
       "version": "0.3.8",
-      "operatorId": "21",
+      "operatorId": "13",
       "operatorKind": "ROperator",
       "propertyValues": [
        {
@@ -14788,7 +14788,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f52402d9",
+    "taskId": "d26470ba930a96624c14b76a6f5827f9",
     "taskState": {
      "kind": "DoneState"
     }
@@ -15124,7 +15124,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f5253324",
+    "taskId": "d26470ba930a96624c14b76a6f5830ff",
     "taskState": {
      "kind": "DoneState"
     }
@@ -15439,7 +15439,7 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "dd812ca31141791f19428c76f5272e1a",
+    "taskId": "d26470ba930a96624c14b76a6f584057",
     "taskState": {
      "kind": "DoneState"
     }
@@ -15620,7 +15620,7 @@
       "kind": "OperatorRef",
       "name": "Export FCS",
       "version": "0.2.0",
-      "operatorId": "11",
+      "operatorId": "16",
       "operatorKind": "ROperator",
       "propertyValues": [],
       "url": {

@@ -150,7 +150,7 @@
     "kind": "OperatorRef",
     "name": "Add Table to Report",
     "version": "0.1.1",
-    "operatorId": "12",
+    "operatorId": "15",
     "operatorKind": "DockerOperator",
     "propertyValues": [
      {

@@ -205,7 +205,7 @@
     "kind": "OperatorRef",
     "name": "Downsample",
     "version": "3.0.0",
-    "operatorId": "8",
+    "operatorId": "9",
     "operatorKind": "ROperator",
     "propertyValues": [
      {

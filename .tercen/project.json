@@ -23,8 +23,8 @@
  "meta": [],
  "url": {
   "kind": "Url",
-  "uri": "https://github.com/tercen/immunophenotyping_template"
+  "uri": "https://github.com/tercen/iteos_immunophenotyping_template"
  },
- "version": "2.2.1",
+ "version": "5dc2a73e3e22d641b4cd44ef371394a96d7e4e97",
  "isPublic": false
 }
